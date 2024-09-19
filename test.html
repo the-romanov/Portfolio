@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular Infinite Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <button class="carousel-btn prev-btn">‹</button>
+        <div style="transform: translateX(-0.8vw);" class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item">Item 7</div> <!-- Clone of the last item -->
+                <div class="carousel-item">Item 1</div>
+                <div class="carousel-item">Item 2</div>
+                <div class="carousel-item">Item 3</div>
+                <div class="carousel-item">Item 4</div>
+                <div class="carousel-item">Item 5</div>
+                <div class="carousel-item">Item 6</div>
+                <div class="carousel-item">Item 7</div>
+                <div class="carousel-item">Item 1</div>
+                <div class="carousel-item">Item 2</div> <!-- Clone of the first item -->
+            </div>
+        </div>
+        <button class="carousel-btn next-btn">›</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+    position: relative;
+    width: 60%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: calc(100% / 3.2); /* Show 3 items at a time */
+    text-align: center;
+    background: #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-btn:focus {
+    outline: none;
+}
+</style>
+<script>
+    const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.next-btn');
+const prevButton = document.querySelector('.prev-btn');
+
+// Start the carousel at index 1 (where Item 1 is in the middle)
+let currentSlide = 1; 
+let slideWidth = slides[0].getBoundingClientRect().width;
+
+// Set initial position to display Item 1 in the middle (Item 7 on left, Item 2 on right)
+track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+
+// Function to move to a specific slide index
+const moveToSlide = (index) => {
+    track.style.transition = 'transform 0.5s ease';
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
+    currentSlide = index;
+};
+
+// Handle next button click
+nextButton.addEventListener('click', () => {
+    if (currentSlide >= slides.length - 3) {
+        // If we reach the clone of Item 1, jump back to the real Item 1
+        track.style.transition = 'none';
+        currentSlide = 1;
+        track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+        setTimeout(() => {
+            track.style.transition = 'transform 0.5s ease';
+            moveToSlide(currentSlide + 1);
+        }, 50);
+    } else {
+        moveToSlide(currentSlide + 1.056);
+    }
+});
+
+// Handle previous button click
+prevButton.addEventListener('click', () => {
+    if (currentSlide <= 0) {
+        // If we reach the clone of Item 7, jump back to the real Item 7
+        track.style.transition = 'none';
+        currentSlide = slides.length - 2.8; // Index of real Item 7
+        track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+        setTimeout(() => {
+            track.style.transition = 'transform 0.5s ease';
+            moveToSlide(currentSlide - 1);
+        }, 50);
+    } else {
+        moveToSlide(currentSlide - 1.056);
+    }
+});
+
+// Handle window resize to recalculate slide width
+window.addEventListener('resize', () => {
+    slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+});
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Concatenate Example</title>
+</head>
+<body>
+    <div id="element5">This is element 5</div>
+    <script>
+        let prefix = "element";
+        let number = 5; // This can be dynamic based on your needs
+        let elementId = `${prefix}${number}`; // Create the ID
+        let element = document.getElementById(elementId); // Get the element
+        console.log(element.innerText); // Output: This is element 5
+    </script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+*{margin:0;}
+.buttons{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+@font-face {
+  font-family: "furore";
+  src: url("Fonts/Furore-webfont.woff") format('woff');
+}
+@font-face {
+    font-family: "expletus-sans-bold";
+    src: url("Fonts/ExpletusSans-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "expletus-sans";
+    src: url("Fonts/ExpletusSans-Regular.ttf") format('truetype');
+}
+.gray{
+    background-color: #1d1d1d; /* #1d1d1d;*/
+}
+#textportfolio {
+    box-sizing: border-box; /* Or content-box */
+}
+@media only screen and (max-width: 1800px) {
+    #portfolio{
+        transform: translate(156vw, -16vw) !important;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    #portfolio{
+        transform: translate(156vw, -20vw) !important;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    #portfolio{
+        transform: translate(156vw, -24vw) !important;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    #starttext{
+        transform: translate(-50vw, -24vw) !important;
+    }
+    #hoe{
+        transform: translateY(5vw) !important;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    #portfolio{
+        transform: translate(156vw, -32vw) !important;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #portfolio{
+        transform: translate(156vw, -37vw) !important;
+    }
+    #face {
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 1040px) {
+    #portfolio{
+        transform: translate(156vw, -57vw) !important;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #portfolio{
+        transform: translate(156vw, -71vw) !important;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #portfolio{
+        transform: translate(156vw, -82vw) !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #portfolio{
+        transform: translate(156vw, -102vw) !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #textportfolio {
+        transform: translate(-100vw, 60vw) !important;
+    }
+    #hoe {
+        font-size: 6vw !important;
+        transform: translate(90vw, -140vw) !important;
+    }
+    #hoemainline {
+        width:73vw !important;
+    }
+    #testcard {
+        width: 40vw !important;
+        transform: translate(-10vw, 20vw) !important;
+    }
+    #right {
+        width: 15vw !important;
+        transform: translate(37vw, 45vw)!important;
+    }
+    #left {
+        width: 15vw !important;
+        transform: translate(-49vw, 45vw)!important;
+    }
+    #hoeline {
+        transform: translate(85vw, -142vw) !important;
+    }
+    #cards {
+        transform: translate(122vw, -142vw) !important;
+    }
+    #face{
+        visibility: hidden;
+    }
+    #facecomp{
+        visibility: hidden;
+    }
+    #phoneface {
+        visibility: visible !important;
+    }
+    #phonefacebody {
+        visibility: visible !important;
+    }
+    #aboutme{
+        transform: translate(31vw, 0vw) !important;
+    }
+    #scrol{
+        transform: translate(21vw, 55vw) !important;
+    }
+    #portfolio {
+        transform: translate(-100vw,0)
+    }
+    #whoami {
+        transform: translate(0,-35vw)
+    }
+    #whoamititle {
+        font-size: 5vw !important;
+        transform: translate(-45vw, 8vw) !important;
+    }
+    #whoamidivider {
+        transform: translate(-49vw, 6vw) !important;
+    }
+    #whoamiline {
+        width: 31vw !important;
+    }
+    #whoamidesc {
+        font-size: 2vw !important;
+        transform: translate(-49vw, 9vw) !important;
+    }
+    #edutitle{
+        font-size: 5vw !important;
+        transform: translate(-45vw, -20vw) !important;
+    }
+    #edudivider {
+        transform: translate(-49vw, -21vw) !important;
+    }
+    #eduline {
+        width: 34vw !important;
+        height: .4vw !important;
+    }
+    #eduball {
+        width: 1% !important;
+    }
+    #expertitle{
+        font-size: 5vw !important;
+        transform: translate(-0vw, -76vw) !important;
+    }
+    #experdivider {
+        transform: translate(-4.5vw, -77vw) !important;
+    }
+    #experline {
+        width: 35vw !important;
+    }
+    #vd {
+        transform: translate(-9vw, -74vw) !important;
+    }
+    #study{
+        font-size: 5vw !important;
+        transform: translate(-45vw, -20vw) !important;
+    }
+    #sec{
+        font-size: 2.4vw !important;
+        transform: translate(-48vw, -19vw) !important;
+    }
+    #six{
+        font-size: 2.1vw !important;
+        transform: translate(-48vw, -18vw) !important;
+    }
+    #work{
+        font-size: 5vw !important;
+        transform: translate(-45vw, -15vw) !important;
+    }
+    #skan{
+        font-size: 2.1vw !important;
+        transform: translate(-46vw, -15vw) !important;
+    }
+    #atpc{
+        font-size: 2.1vw !important;
+        transform: translate(-46vw, -14vw) !important;
+    }
+    #program {
+        font-size: 2.1vw !important;
+        transform: translate(-0vw, -75vw) !important;
+    }
+    #pictureportfolio{
+        transform: translate(210vw, 60vw) !important;
+    }
+    #gradetitle {
+        font-size: 5vw !important;
+        transform: translate(-0vw, -70vw) !important;
+    }
+    #gradedivider{
+        transform: translate(-4.5vw, -71vw) !important;
+    }
+    #gradeline{
+        width: 25vw !important;
+    }
+    #grades {
+        transform: translate(-4.5vw, -71vw) !important;
+        font-size: 2.1vw !important;
+    }
+}
+@media only screen and (max-height: 930px) and (max-width: 600px) {
+    #portfolio{
+        transform: translate(-100vw, -3vw) !important;
+    }
+    #whoamidesc {
+        font-size: 1.6vw !important;
+    }
+    #expertitle{
+        font-size: 5vw !important;
+        transform: translate(-0vw, -118vw) !important;
+    }
+    #experdivider {
+        transform: translate(-4.5vw, -120vw) !important;
+    }
+    #vd {
+        transform: translate(-9vw, -112vw) !important;
+    }
+    #program {
+        font-size: 1.6vw !important;
+        transform: translate(0vw, -120vw) !important;
+    }
+    #gradetitle {
+        transform: translate(0vw, -117vw) !important;
+    }
+    #gradedivider {
+        transform: translate(-5vw, -119vw) !important;
+    }
+    #grades {
+        transform: translate(-2vw, -119vw) !important;
+    }
+    #edutitle{
+        font-size: 5vw !important;
+        transform: translate(-45vw, -22vw) !important;
+    }
+    #edudivider {
+        transform: translate(-49vw, -23vw) !important;
+    }
+    #study{
+        font-size: 5vw !important;
+        transform: translate(-45vw, -20vw) !important;
+    }
+    #sec{
+        font-size: 2.1vw !important;
+        transform: translate(-8vw, -28vw) !important;
+    }
+    #six{
+        font-size: 2.1vw !important;
+        transform: translate(-8vw, -28vw) !important;
+    }
+    #work{
+        font-size: 5vw !important;
+        transform: translate(-45vw, -25vw) !important;
+    }
+    #skan {
+        font-size: 2vw !important;
+        transform: translate(-1vw, -31vw) !important;
+    }
+    #atpc {
+        font-size: 2.1vw !important;
+        transform: translate(-1vw, -45vw) !important;
+    }
+   
+}
+@media only screen and (max-height: 800px) and (max-width: 600px) {
+    #coursediv {
+        transform: translate(0vw, 40vw) !important;
+    }
+    #edutitle{
+        font-size: 5vw !important;
+        transform: translate(57vw, -115vw) !important;
+    }
+    #edudivider {
+        transform: translate(52vw, -117vw) !important;
+    }
+    #study{
+        font-size: 5vw !important;
+        transform: translate(57vw, -115vw) !important;
+    }
+    #sec{
+        font-size: 2.4vw !important;
+        transform: translate(94vw, -123vw) !important;
+    }
+    #six{
+        font-size: 2.1vw !important;
+        transform: translate(94vw, -123vw) !important;
+    }
+    #work{
+        font-size: 5vw !important;
+        transform: translate(57vw, -120vw) !important;
+    }
+    #skan {
+        font-size: 2.1vw !important;
+        transform: translate(99vw, -126vw) !important;
+    }
+    #atpc {
+        transform: translate(99vw, -140vw) !important;
+    }
+    #hoe {
+        transform: translate(88vw, -100vw) !important;
+    }
+    #hoeline {
+        transform: translate(83vw, -102vw) !important;
+    }
+    #cards {
+        transform: translate(122vw, -102vw) !important;
+    }
+    #coursework {
+        transform: translate(82vw, -51vw);
+    }
+    #coursedesc {
+        transform: translate(82vw, -50.5vw);
+    }
+}
+@media only screen and (max-height: 600px) and (max-width: 600px) { 
+    #gradetitle {
+        transform: translate(94vw, -180vw) !important;
+    }
+    #gradedivider {
+        transform: translate(90vw, -183vw) !important;
+    }
+    #grades {
+        transform: translate(122vw, -189vw) !important;
+    }
+    #eduline {
+        width: 85vw !important;
+    }
+    #expertitle{
+        font-size: 5vw !important;
+        transform: translate(55vw, -122vw) !important;
+    }
+    #experdivider {
+        transform: translate(51vw, -123vw) !important;
+    }
+    #vd {
+        visibility: hidden;
+    }
+    #program {
+        font-size: 1.6vw !important;
+        transform: translate(55vw, -122vw) !important;
+    }
+    #edutitle{
+        font-size: 5vw !important;
+        transform: translate(57vw, -106vw) !important;
+    }
+    #edudivider {
+        transform: translate(52vw, -108vw) !important;
+    }
+    #study{
+        font-size: 5vw !important;
+        transform: translate(57vw, -105vw) !important;
+    }
+    #sec{
+        font-size: 2.4vw !important;
+        transform: translate(94vw, -113vw) !important;
+    }
+    #six{
+        font-size: 2.1vw !important;
+        transform: translate(94vw, -113vw) !important;
+    }
+    #work{
+        font-size: 5vw !important;
+        transform: translate(57vw, -110vw) !important;
+    }
+    #skan {
+        font-size: 2.1vw !important;
+        transform: translate(99vw, -116vw) !important;
+    }
+    #atpc {
+        transform: translate(99vw, -130vw) !important;
+    }
+    #hoe {
+        transform: translate(88vw, -80vw) !important;
+    }
+    #hoeline {
+        transform: translate(83vw, -82vw) !important;
+    }
+    #cards {
+        transform: translate(122vw, -110vw) !important;
+    }
+    #coursediv {
+        transform: translate(-5vw, 30vw) !important;
+    }
+    #coursedesc {
+        font-size: 2vw !important;
+        transform: translate(110vw, -55.5vw) !important;
+    }
+}
+@media only screen and (max-height: 500px) and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 512px) {
+
+    #portfolio {
+        transform: translate(156vw, -118vw) !important;
+    }
+}
+@media only screen and (max-width: 450px) {
+
+    #portfolio {
+        transform: translate(156vw, -145vw) !important;
+    }
+}
+@media only screen and (max-width: 320px){
+    #portfolio {
+        transform: translate(156vw, -235vw) !important;
+    }
+}
+@media only screen and (max-width: 240px) {
+    #textportfolio {
+        transform: translate(-100vw, -45vw) !important;
+    }
+}
+
+
+
+@media only screen and (max-height: 320px) {
+    #whoamidesc {
+        font-size: 3vw !important;
+        transform: translate(-50vw, 9vw) !important;
+    }
+    #scrol {
+        font-size: 3vw !important;
+        transform: translate(14vw, 54vw) !important;
+    }
+}
+/*and (max-height: 1500px) and (max-width: 1500px)*/
+/*.carousel {
+    position: relative;
+    width: 70.6vw;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    flex: 0 0 300px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}*/

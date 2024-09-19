@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animation Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #targetElement {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            display: block;
+            margin: 10px;
+        }
+        #anotherElement {
+            display: none;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            margin: 10px;
+        }
+        button:disabled {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <button id="moveButton">Move Element</button>
+    <div id="targetElement"></div>
+    <div id="anotherElement">I appear before the animation!</div>
+
+    <script>
+        $(document).ready(function() {
+            $('#moveButton').click(function() {
+                var $this = $(this);
+                
+                // Make another element appear
+                $('#anotherElement').fadeIn(500);
+                
+                // Disable the button to prevent further clicks
+                $this.prop('disabled', true);
+                
+                // Move the target element to the right and hide it afterward
+                $('#targetElement').animate({left: '+=200px'}, 1000, function() {
+                    $(this).hide();
+                    // Enable the button after the animation is done
+                    $this.prop('disabled', false);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
