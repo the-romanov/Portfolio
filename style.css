@@ -1,4 +1,7 @@
 *{margin:0;}
+a{
+    color:white;
+}
 .buttons{
     background-color: transparent;
     background-repeat: no-repeat;
@@ -445,56 +448,3 @@
         transform: translate(14vw, 54vw) !important;
     }
 }
-/*and (max-height: 1500px) and (max-width: 1500px)*/
-/*.carousel {
-    position: relative;
-    width: 70.6vw;
-    max-width: 1200px;
-    overflow: hidden;
-}
-
-.carousel-container {
-    overflow: hidden;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-card {
-    background-color: #333;
-    color: #fff;
-    border-radius: 10px;
-    width: 300px;
-    margin: 0 10px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    flex: 0 0 300px;
-}
-
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 24px;
-    user-select: none;
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
-}*/
