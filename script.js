@@ -13,15 +13,19 @@ document.addEventListener("scroll", function() {
     const txy = translateX - (maxTranslateX * 2.5)
     const alpha = (translateX - startAnimation)/finishAnimation;
 
-    document.getElementById("test2").innerHTML=(maxTranslateX);
-    document.getElementById("test3").innerHTML=(alpha);
+    //document.getElementById("test2").innerHTML=(maxTranslateX);
+    //document.getElementById("test3").innerHTML=(alpha);
     if (translateX <= translateStop) {
+        vignette.style.opacity = 1;
     container.style.transform = `translateX(-${translateX}px)`;
     } else if (maxTranslateX * 2.5 <= translateX) {
         container.style.transform = `translateX(-${translateStop}px) translateY(-${txy}px)`;
+        vignette.style.opacity = 0;
+        vignette.style.visibility="hidden";
     } else { //if (maxTranslateX * 1.5 <= translateX) {
         container.style.transform = `translateX(-${translateStop}px)`;
         vignette.style.opacity = (1-alpha);
+        vignette.style.visibility="visible";
 
 
     }

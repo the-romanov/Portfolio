@@ -1,171 +1,314 @@
 <!DOCTYPE html>
+<!--240 PX WIDTH * 320 PX HEIGHT IS THE LEAST RESOLUTION IT CAN HANDLE
+
+1920 PX WIDHT * 1080 PX WIDTH IS THE MOST RESOLUTION IT CAN HANDLE.
+
+ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modular Infinite Carousel</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="carousel-container">
-        <button class="carousel-btn prev-btn">‹</button>
-        <div style="transform: translateX(-0.8vw);" class="carousel">
-            <div class="carousel-track">
-                <div class="carousel-item">Item 7</div> <!-- Clone of the last item -->
-                <div class="carousel-item">Item 1</div>
-                <div class="carousel-item">Item 2</div>
-                <div class="carousel-item">Item 3</div>
-                <div class="carousel-item">Item 4</div>
-                <div class="carousel-item">Item 5</div>
-                <div class="carousel-item">Item 6</div>
-                <div class="carousel-item">Item 7</div>
-                <div class="carousel-item">Item 1</div>
-                <div class="carousel-item">Item 2</div> <!-- Clone of the first item -->
+    <head>
+    <title>{ Roman Osborne - Personal Profile }</title>
+        <script src="./JS/jquery-3.7.1.min.js"></script>
+        <script src="./JS/footerheaderscript.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="gray" style="height: 300vh">
+        <!--PAGE START-->
+        <div id="front" style="position: fixed;">
+            <!--LEFT SIDE START-->
+        <div style="display: flex; justify-content: space-between;">
+            <img id ="face" src="./FrontFace.png" style="width:46vw; height: 53vw;">
+            <img id ="facecomp" src="./FrontFaceCompressed.png" style="visibility: hidden; width:700px; transform: translate(0vw, 0vw);">
+            <div id="phonefacebody" style="visibility: hidden; position: absolute; height: 50vw; background-color: #0a0a0a; float:left;">
+            <img id ="phoneface" src="./FrontFacePhone.png" style="visibility: hidden; float: left; height: 50vw; width: 100vw;">
             </div>
+            <!--BRIEF ABOUT ME START-->
+            <div id="aboutme" style="position: absolute; transform: translateX(42vw);">
+            <h1 style="font-family: expletus-sans; color: white; font-size: 5vw; transform: translate(14%, 40%);">ROMAN OSBORNE</h1>
+            <div style="display: flex; align-items: center; transform: translate(7.5%, 40%);">
+                <img style="width: 2%; padding: 1%" src="./Dot.png">
+                <img style="width: 49vw; height: .5vw;" src="./Line.png">
+            </div>
+            <h1 style="font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(18vw, 100%);">Seasoned Programmer</h1>
+            <h1 style="font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(22vw, 200%);">Game Developer</h1>
+            <h1 style="font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(19vw, 300%);">Video & Photo Editor</h1>
+            <h1 style="font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(19vw, 400%);">Digital Media Creator</h1>
+            <div style="display: flex; align-items: center; transform: translate(14vw, 13vw);">
+                <img style="width: 2%; padding: 1%" src="./Dot.png">
+                <img style="width: 30vw; height: .5vw;" src="./Line.png">
+            </div>
+        </div><!--BRIEF ABOUT ME END-->
+        <h1 id="scrol" style="position: absolute; width: 1300px; font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(45vw, 45vw);">SCROLL OR SWIPE DOWN TO START</h1>
+    <!--TEST START-->
+        <h1 id="test2" style="visibility: hidden;  width: 1300px; font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(-61vw, 46.5vw);">Otherwise you won't see the goods</h1>
+        <h1 id="test3" style="visibility: hidden; width: 1300px; font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(61vw, 46.5vw);">Otherwise you won't see the goods</h1>
+        <!--TEST END-->
         </div>
-        <button class="carousel-btn next-btn">›</button>
+        <!--LEFT SIDE END, RIGHT SIDE START--><div style="transform: translate(0vw,-45.3vw);">
+        <!--ANIMATION DIV START-->
+        <div>
+        <img id="vignette" style="position: fixed; z-index: 5; width: 105vw; height: 1110vh; transform: translate(100vw, -14%); background-color: rgba(0,0,0,1);" src="./Vignette.png"> <!--NO -100vh ON DEFAULT 260 VH HEIGHT FOR ALL CASES-->
+        <!--<img id="v2" style="position: fixed; width: 100vw; height: 150vh; transform: translate(100vw, -15vh); opacity: 0.4;" src="./Vignette.png">-->
+        <!--<img style="position: fixed; width: 100vw; height: 100vh; transform: translate(100vw, 85vh); opacity: 0.3;" src="./Gradient.png">-->
+        </div><!--ANIMATION DIV END, TEXT PORTFOLIO START, FULL PORTFOLIO START-->
+        <div style="display: flex; transform: translate(153vw, -13vw);" id="portfolio"><div id="textportfolio">
+        <!--WHO AM I START-->
+        <div id="whoami" style="color:white;">
+        <h1 id="whoamititle" style="width: 100vw; font-family: expletus-sans-bold; font-size: 3vw; transform: translate(-46vw, 11vw); color:white;">WHO AM I?</h1>
+        <div id="whoamidivider" style="display: flex; align-items: center; transform: translate(-49vw, 9vw); width: 100vw;">
+            <img style="width: 1%; padding: 1%" src="./Dot.png">
+            <img id="whoamiline" style="width: 19vw; height: .5vw;" src="./Line.png">
+        </div>
+        <h1 id="whoamidesc" style="width: 100vw; font-family: expletus-sans-bold; font-size: 1vw; transform: translate(-45%, 8vw); color:white;">I am a driven young person who is willing to craft excellence from hard work and from scratch.<br><br>My love for computers which started since I was months old has propelled me to become so<br>intrigued in to the digital world. Computers have become second nature to me.<br><br>Because of technology and how fast it advances, I also advance myself with working hard and<br>driving myself to change the world for better.</h1>
+        </div><!--WHO AM I END, EDUCATION START--><div>
+        <h1 id="edutitle" style="width: 100vw; font-family: expletus-sans-bold; font-size: 3vw; transform: translate(-45vw, 11vw); color:white;">EDUCATION:</h1>
+        <div id="edudivider" style="display: flex; align-items: center; transform: translate(-48vw, 9.5vw); width: 100vw;">
+            <img id="eduball" style="width: .5%; padding: 1%" src="./Dot.png">
+            <img id="eduline" style="width: 20vw; height: .25vw;" src="./Line.png">
+        </div>
+        <!--STUDYING START-->
+        <div>
+        <h1 id="study" style="width: 100vw; font-family: expletus-sans; font-size: 3vw; transform: translate(-44vw, 10.5vw); color:white;">-STUDYING</h1>
+        <h1 id="sec" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(-44%, 11vw); color:white;">- 2018-2023 - Secondary School</h1>
+        <h1 id="six" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(-44%, 11.5vw); color:white;">- 2023-2025 - Sixth Form College <br>[ London Design & Engineering UTC ]</h1>
+        </div><!--STUDYING END, WORK EXPERIENCE START--><div>
+        <h1 id="work" style="width: 100vw; font-family: expletus-sans; font-size: 3vw; transform: translate(-17vw, 1.5vw); color:white;">-WORK<br>EXPERIENCE</h1>
+        <h1 id="skan" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(-17%, 2vw); color:white;">- 27 - 30 June 2022 < Skanska ><br>Design & CAD Tools</Skanska></h1>
+        <h1 id="atpc" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(-17%, 3.5vw); color:white;">- 27 July - 18 August 2024<br>< Atlantic Pacific ><br>Lifeguard @ Royal Albert Dock</h1>
+        </div></div>
+        <!--EDUCATION & WORK EXPERIENCE END, VERTICAL DIVIDER START-->
+        <div id="vd" style="display: flex; align-items: center; transform: translate(7vw, -40vw); width: 100vw;">
+            <img id="vdot" style="width: 1%; padding: 1%" src="./Dot.png">
+            <img id="vline" style="width: 38vw; height: .5vw; transform: rotate(90deg) translate(55%, 20.5vw);" src="./Line.png">
+        </div>
+        <!--VERTICAL DIVIDER END, EXPERIENCE START-->
+        <div>
+        <h1 id="expertitle" style="width: 100vw; font-family: expletus-sans-bold; font-size: 3vw; transform: translate(16vw, -42vw); color:white;">EXPERIENCE:</h1>
+        <div id="experdivider" style="display: flex; align-items: center; transform: translate(12vw, -43vw); width: 100vw;">
+            <img style="width: 1%; padding: 1%" src="./Dot.png">
+            <img id="experline" style="width: 21vw; height: .5vw;" src="./Line.png">
+        </div>
+        <h1 id="program" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(16%, -42vw); color:white;">
+            Programming Languages:<br>5+ Years of Java, C#<br>3+ Years of Python
+            <br>1+ Year of HTML/CSS/JavaScript
+            <br><br>Game Developing:
+            <br>1+ Year of Unity
+            <br>1+ Year of Unreal Engine 5
+            <br>3+ Years of Roblox Studio
+            <br>Employed in Work Experience & Projects
+        </h1>
+        </div>
+        <!--EXPERIENCE END, GRADES START--><div>
+        <h1 id="gradetitle" style="width: 100vw; font-family: expletus-sans-bold; font-size: 3vw; transform: translate(16vw, -39vw); color:white;">GRADES:</h1>
+        <div id="gradedivider" style="display: flex; align-items: center; transform: translate(12vw, -40vw); width: 100vw;">
+            <img style="width: 1%; padding: 1%" src="./Dot.png">
+            <img id="gradeline" style="width: 15vw; height: .5vw;" src="./Line.png">
+        </div>
+        <h1 id="grades" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(16%, -40vw); color:white;">
+            A Level Mathematics - (N/A)<br>
+            A Level Further Mathematics - (N/A)<br>
+            A Level Computer Science - (N/A)<br><br>
+            Cambridge Technicals<br>
+            Digital Media Diploma - (N/A)
+        </h1>
+    </div><!--GRADES END-->
+</div><!--TEXT PORTFOLIO END, PICTURE PORTFOLIO START-->
+    <div id="pictureportfolio" style="position: flex; justify-content: center; transform: translate(-148vw, 56vw) !important;">
+        <h1 id="hoe" style="width: 100vw; font-family: expletus-sans; font-size: 4vw; color:white; transform: translate(23vw, 1vw) !important;">HANDS-ON EXPERIENCE</h1>
+        <div id="hoeline" style="transform: translate(18.5vw,-1vw); display: flex; align-items: center;width: 100vw;">
+            <img style="width: 1%; padding: 1%" src="./Dot.png">
+            <img id="hoemainline" style="width: 50vw; height: .5vw;" src="./Line.png">
+        </div>
+
+            <div style="z-index: 6; position: fixed; transform: translate(65vw,-1vh) !important;">
+                <button class="buttons" style="height: 10vw; z-index: 5; position: absolute; width: 8vw; transform: translate(18vw, 27vh);" id="right"><img style="transform: translate(-3vw, -9vh); width:6vw; z-index: 5; position: absolute;" src="./ArrowShowcase.png"></button>
+                <img style="position: relative; z-index: 3; height: 75vh; width:31vw;" src="./ShowcaseEndFlip.png">
+            </div>
+            <div style="z-index: 6; position: fixed; transform: translate(-9vh, -1vh) !important;">
+                <button class="buttons" style="height: 10vw; width: 8vw; z-index: 5; position: absolute; transform: translate(8vw, 27vh);" id="left"><img style="transform: translate(-3vw, -9vh); width:6vw; z-index: 5; position: absolute;" src="./ArrowFlip.png"></button>
+                <img style="position: absolute; z-index: 3; height: 75vh; width:33vw;" src="./ShowcaseEnd.png">         
+    </div><div style="display: flex; justify-content: left; transform: translateX(-57.65%); z-index: 2;" class="carousel-track"> <!-- 10.35% start -57.65% end 68% total. 9.714285714% each-->
+        <button id="item5" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>5</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+        <button id="item6" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>6</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+        <button id="item0" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>7</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                            <button id="item3" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>3</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                            <button id="item4" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>4</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                            <button id="item5" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>5</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                            <button id="item6" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>6</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                            <button id="item0" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>7</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                            <button id="item1" class="carousel-item buttons" style="width: 20vw; height: 68vh;" onclick="test()"><p>1</p><img id="image5img" style="width:100%; z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                            <button id="item2" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>2</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+            </div>
+            <script>
+               $(document).ready(function() {
+    var counter = 5;
+    var left = $('#left')
+    var right = $('#right')
+    $(right).click(function() {
+    $(left).prop('disabled', true);
+    $(right).prop('disabled', true);
+    if (counter == 8) {
+        $('#item8').removeClass('trans');
+        $('#item1').removeClass('trans');
+        $('.carousel-track').removeClass('trans');
+    } else if (counter == 1) {
+        counter = 8;
+        $(`#item7, #item8`).css({ visibility: 'visible' });
+            $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vh", transform: 'translateY(0vh)' });
+            $(`#item9, #item6`).css({ visibility: 'visible' });
+            $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vh", transform: 'translateY(8vh)' });
+            $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-101.4vw)' });//-101.4vw
+            $(`#item0, #item1, #item2`).css({ visibility: 'hidden' });
+    }
+    var push = (counter - 6) * -17.11;//(counter - 6) * -17.11;
+    $(`#item${counter}`).animate({ width: "15vw", height: "50vh" }, 200);
+    $(`#item${counter - 1}`).animate({ width: "20vw", height: "68vh" }, 200);
+    $(`#item${counter - 2}`).css({ visibility: 'visible' });
+    $('.carousel-track').css({ transform: `translateX(${ -50 + push }vw)` });//${ -50 + push }vw
+    $(`#item${counter}`).css({ transform: 'translateY(8vh)' });
+    $(`#item${counter - 1}`).css({ transform: 'translateY(0vh)' });
+    $(`.carousel-track`).removeClass('trans');
+    $('#item1').removeClass('trans');
+    $('#item8').removeClass('trans');
+    setTimeout(function() {
+        $(left).prop('disabled', false);
+        $(right).prop('disabled', false);
+        $(`#item${counter + 1}`).css({ visibility: 'hidden' });
+        counter--;
+        if (counter < 2) {
+            counter = 8;
+            $(`#item7, #item8`).css({ visibility: 'visible' });
+            $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vh", transform: 'translateY(0vh)' });
+            $(`#item9`).css({ visibility: 'visible' });
+            $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vh", transform: 'translateY(8vh)' });
+            $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-101.4vw)' });//-101.4vw
+            $(`#item0, #item1, #item2`).css({ visibility: 'hidden' });
+        }
+    }, 1000);
+});
+
+    $(left).click(function() {
+        $(left).prop('disabled', true);
+        $(right).prop('disabled', true);
+        if (counter == 1) {
+            $('#item8').removeClass('trans');
+            $('#item1').removeClass('trans');
+            $('.carousel-track').removeClass('trans');
+        } else if (counter == 8) {
+        counter = 1;
+        $(`#item0, #item1`).css({ visibility: 'visible' });
+                $('#item1').addClass('trans').css({ width: "20vw", height: "68vh", transform: 'translateY(0vh)' });
+                $(`#item2`).css({ visibility: 'visible' });
+                $('.carousel-track').addClass('trans').css({ transform: 'translateX(18.3vw)' });//18.3vw
+                $(`#item7, #item8, #item9`).css({ visibility: 'hidden' });
+                $(`#item8`).css({ width: "15vw", height: "50vh", transform: 'translateY(8vh)' });
+    }
+        var push = (((counter - 4) * -9.8) - 28.4);//((-counter + 6) * 17.11) - 34.22;
+        $(`#item${counter}`).animate({ width: "15vw", height: "50vh" }, 200);
+        $(`#item${counter + 1}`).animate({ width: "20vw", height: "68vh" }, 200);
+        $(`#item${counter + 2}`).css({ visibility: 'visible' });
+        $('.carousel-track').css({ transform: `translateX(${push}%)`});//' + (-50 + push) + 'vw -38.2% -48% 9.8%
+        $(`#item${counter + 1}`).css({ transform: 'translateY(0vh)' });
+        $(`#item${counter}`).css({ transform: 'translateY(8vh)' });
+        $(`.carousel-track`).removeClass('trans');
+        $('#item1').removeClass('trans');
+        $('#item8').removeClass('trans');
+        setTimeout(function() {
+            $(left).prop('disabled', false);
+            $(right).prop('disabled', false);
+            $(`#item${counter - 1}`).css({ visibility: 'hidden' });
+            counter++;
+            if (counter > 7) {
+                counter = 1;
+                $(`#item0, #item1`).css({ visibility: 'visible' });
+                $('#item1').addClass('trans').css({ width: "20vw", height: "68vh", transform: 'translateY(0vh)' });
+                $(`#item2`).css({ visibility: 'visible' });
+                $('.carousel-track').addClass('trans').css({ transform: 'translateX(10.4%)' });//18.3vw
+                $(`#item7, #item8, #item9`).css({ visibility: 'hidden' });
+                $(`#item8`).css({ width: "15vw", height: "50vh", transform: 'translateY(8vh)' });
+            }
+        }, 1000);
+    });
+});
+
+function adjustTranslateY() {
+            const div = document.getElementById('vignette');
+            const screenWidth = window.innerWidth;
+
+            // Change the translateY value based on screen width
+            let translateYValue;
+
+            if (screenWidth >= 1800) {
+                translateYValue = -20;
+            } else if (screenWidth >= 1600) {
+                translateYValue = -31;
+            } else if (screenWidth >= 1400) {
+                translateYValue = -41;
+            } else if (screenWidth >= 1200) {
+                translateYValue = -51;
+            } else if (screenWidth >= 1000) {
+                translateYValue = -61;
+            } else if (screenWidth >= 800) {
+                translateYValue = -71;
+            } else if (screenWidth >= 600) {
+                translateYValue = -81;
+            } else if (screenWidth >= 400) {
+                translateYValue = -91;
+            } else {
+                translateYValue = -101;
+            }
+
+            // Apply the transformation
+            div.style.transform = `translate(100vw ,${translateYValue}%)`;
+        }
+
+        // Listen for window resize and load events
+        window.addEventListener('resize', adjustTranslateY);
+        window.addEventListener('load', adjustTranslateY);
+            </script>
+        </div>
+        <div id="coursediv" style="position: absolute; transform: translate(-44vw, 210vh); ">
+            <h1 id="coursework" style="width: 100vw; font-family: expletus-sans; font-size: 3vw; color:white;">-COURSEWORK</h1>
+            <h1 id="coursedesc" style="width: 100vw; font-family: expletus-sans; font-size: 2.5vw; color:white;">I have undertaken the Cambridge Technicals Digital Media Diploma.<br><a href="./coursework.html">Click here</a> for my projects I have done within my coursework.</h1>
+        </div></div><!--FULL PORTFOLIO, PICTURE PORTFOLIO END-->
     </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-<style>
-    * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.carousel-container {
-    position: relative;
-    width: 60%;
-    margin: 50px auto;
-    overflow: hidden;
-}
-
-.carousel {
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    min-width: calc(100% / 3.2); /* Show 3 items at a time */
-    text-align: center;
-    background: #ddd;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    font-size: 24px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 1;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
-
-.carousel-btn:focus {
-    outline: none;
-}
-</style>
-<script>
-    const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
-const nextButton = document.querySelector('.next-btn');
-const prevButton = document.querySelector('.prev-btn');
-
-// Start the carousel at index 1 (where Item 1 is in the middle)
-let currentSlide = 1; 
-let slideWidth = slides[0].getBoundingClientRect().width;
-
-// Set initial position to display Item 1 in the middle (Item 7 on left, Item 2 on right)
-track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-
-// Function to move to a specific slide index
-const moveToSlide = (index) => {
-    track.style.transition = 'transform 0.5s ease';
-    track.style.transform = `translateX(-${slideWidth * index}px)`;
-    currentSlide = index;
-};
-
-// Handle next button click
-nextButton.addEventListener('click', () => {
-    if (currentSlide >= slides.length - 3) {
-        // If we reach the clone of Item 1, jump back to the real Item 1
-        track.style.transition = 'none';
-        currentSlide = 1;
-        track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-        setTimeout(() => {
-            track.style.transition = 'transform 0.5s ease';
-            moveToSlide(currentSlide + 1);
-        }, 50);
-    } else {
-        moveToSlide(currentSlide + 1.056);
+    </div><!--PAGE END-->
+    </body>
+    <style>
+        .carousel-container {
+        position: relative;
+        width: 70%;
+        margin: 50px auto;
+        overflow: hidden;
     }
-});
-
-// Handle previous button click
-prevButton.addEventListener('click', () => {
-    if (currentSlide <= 0) {
-        // If we reach the clone of Item 7, jump back to the real Item 7
-        track.style.transition = 'none';
-        currentSlide = slides.length - 2.8; // Index of real Item 7
-        track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-        setTimeout(() => {
-            track.style.transition = 'transform 0.5s ease';
-            moveToSlide(currentSlide - 1);
-        }, 50);
-    } else {
-        moveToSlide(currentSlide - 1.056);
+    .carousel-item {
+        transition: transform 1s, width 1s, height 1s;
+        margin: 20px;
     }
-});
-
-// Handle window resize to recalculate slide width
-window.addEventListener('resize', () => {
-    slideWidth = slides[0].getBoundingClientRect().width;
-    track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-});
-</script>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Concatenate Example</title>
-</head>
-<body>
-    <div id="element5">This is element 5</div>
-    <script>
-        let prefix = "element";
-        let number = 5; // This can be dynamic based on your needs
-        let elementId = `${prefix}${number}`; // Create the ID
-        let element = document.getElementById(elementId); // Get the element
-        console.log(element.innerText); // Output: This is element 5
-    </script>
-</body>
+    .carousel {
+        overflow: hidden;
+        width: 100vw;
+    }
+    .carousel-track {
+        transition: transform 0.5s ease;
+    }
+    .trans {
+        transition: none !important;
+    }
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 1;
+    }
+    .carousel-btn:focus {
+        outline: none;
+    }
+    </style>
 </html>

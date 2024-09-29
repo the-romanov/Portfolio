@@ -22,24 +22,24 @@ a{
     src: url("Fonts/ExpletusSans-Regular.ttf") format('truetype');
 }
 .gray{
-    background-color: #1d1d1d; /* #1d1d1d;*/
+    background-color: #6d404091; /* #1d1d1d;*/
 }
 #textportfolio {
     box-sizing: border-box; /* Or content-box */
 }
 @media only screen and (max-width: 1800px) {
     #portfolio{
-        transform: translate(156vw, -16vw) !important;
+        /*transform: translate(156vw, -16vw) !important;*/
     }
 }
 @media only screen and (max-width: 1700px) {
     #portfolio{
-        transform: translate(156vw, -20vw) !important;
+        /*transform: translate(156vw, -20vw) !important;*/
     }
 }
 @media only screen and (max-width: 1600px) {
     #portfolio{
-        transform: translate(156vw, -24vw) !important;
+        /*transform: translate(156vw, -24vw) !important;*/
     }
 }
 @media only screen and (max-width: 1500px) {
