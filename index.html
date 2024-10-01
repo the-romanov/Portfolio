@@ -38,6 +38,7 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
                 <img style="width: 30vw; height: .5vw;" src="./Line.png">
             </div>
         </div><!--BRIEF ABOUT ME END-->
+        <!--<h1>Current Screen Width: <span id="screen-width">0</span> pixels</h1>-->
         <h1 id="scrol" style="position: absolute; width: 1300px; font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(45vw, 45vw);">SCROLL OR SWIPE DOWN TO START</h1>
     <!--TEST START-->
         <h1 id="test2" style="visibility: hidden;  width: 1300px; font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(-61vw, 46.5vw);">Otherwise you won't see the goods</h1>
@@ -119,154 +120,31 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
             <img style="width: 1%; padding: 1%" src="./Dot.png">
             <img id="hoemainline" style="width: 50vw; height: .5vw;" src="./Line.png">
         </div>
+        <div>
             <div style="z-index: 6; position: fixed; transform: translate(65vw,-1vh) !important;">
                 <button class="buttons" style="height: 10vw; z-index: 5; position: absolute; width: 8vw; transform: translate(18vw, 27vh);" id="right"><img style="transform: translate(-3vw, -9vh); width:6vw; z-index: 5; position: absolute;" src="./ArrowShowcase.png"></button>
-                <img style="position: relative; z-index: 3; height: 75vh; width:31vw;" src="./ShowcaseEndFlip.png">
+                <img style="position: relative; z-index: 3; height: 75%; width:31vw;" src="./ShowcaseEndFlip.png">
             </div>
             <div style="z-index: 6; position: fixed; transform: translate(-9vh, -1vh) !important;">
                 <button class="buttons" style="height: 10vw; width: 8vw; z-index: 5; position: absolute; transform: translate(8vw, 27vh);" id="left"><img style="transform: translate(-3vw, -9vh); width:6vw; z-index: 5; position: absolute;" src="./ArrowFlip.png"></button>
-                <img style="position: absolute; z-index: 3; height: 75vh; width:33vw;" src="./ShowcaseEnd.png">         
-    </div><div style="display: flex; justify-content: left; transform: translateX(-28.50714258714%); z-index: 2;" class="carousel-track"> 
-        <button id="item0" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>7</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
-                            <button id="item1" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>1</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                <img style="position: relative; z-index: 3; height: 75%; width:33vw;" src="./ShowcaseEnd.png">         
+    </div>
+    <div id="mover">
+    <div style="display: flex; justify-content: left; transform: translateX(-28.50714258714%); z-index: 2;" class="carousel-track"> 
+                            <button id="item0" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="amnesic()"><img style="width:100%;  z-index: 2; position: relative;" src="./ACShowcase.png"></button>
+                            <button id="item1" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit3()"><img style="width:100%;  z-index: 2; position: relative;" src="./U3Showcase.png"></button>
                             <button id="item2" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit4()"><img style="width:100%;  z-index: 2; position: relative;" src="./U4Showcase.png"></button>
                             <button id="item3" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit10()"><img style="width:100%;  z-index: 2; position: relative;" src="./U10Showcase.png"></button>
                             <button id="item4" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit11()"><img style="width:100%;  z-index: 2; position: relative;" src="./U11Showcase.png"></button>
                             <button id="item5" class="carousel-item buttons" style="width: 20vw; height: 68vh;" onclick="test()"><img style="width:100%; z-index: 2; position: relative;" src="./U12Showcase.png"></button>
                             <button id="item6" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit21()"><img style="width:100%;  z-index: 2; position: relative;" src="./U21Showcase.png"></button>
-                            <button id="item7" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>7</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
-                            <button id="item8" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="test()"><p>1</p><img style="width:100%;  z-index: 2; position: relative;" src="./TestShowcase.png"></button>
+                            <button id="item7" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="amnesic()"><img style="width:100%;  z-index: 2; position: relative;" src="./ACShowcase.png"></button>
+                            <button id="item8" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit3()"><img style="width:100%;  z-index: 2; position: relative;" src="./U3Showcase.png"></button>
                             <button id="item9" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit4()"><img style="width:100%;  z-index: 2; position: relative;" src="./U4Showcase.png"></button>
-            </div>
-            <script>
-               $(document).ready(function() {
-    var counter = 5;
-    var left = $('#left')
-    var right = $('#right')
-    $(right).click(function() {
-    $(left).prop('disabled', true);
-    $(right).prop('disabled', true);
-    if (counter == 8) {
-        $('#item8').removeClass('trans');
-        $('#item1').removeClass('trans');
-        $('.carousel-track').removeClass('trans');
-    } else if (counter == 1) {
-        counter = 8;
-        $(`#item7, #item8`).css({ visibility: 'visible' });
-            $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vh", transform: 'translateY(0vh)' });
-            $(`#item9, #item6`).css({ visibility: 'visible' });
-            $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vh", transform: 'translateY(8vh)' });
-            $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-57.65%)' });
-            $(`#item0, #item1, #item2`).css({ visibility: 'hidden' });
-    }
-    var push = (((counter-6) * - 9.714285714) -28.50714258714);
-    $(`#item${counter}`).animate({ width: "15vw", height: "50vh" }, 200);
-    $(`#item${counter - 1}`).animate({ width: "20vw", height: "68vh" }, 200);
-    $(`#item${counter - 2}`).css({ visibility: 'visible' });
-    $('.carousel-track').css({ transform: `translateX(${push}%)`});
-    $(`#item${counter}`).css({ transform: 'translateY(8vh)' });
-    $(`#item${counter - 1}`).css({ transform: 'translateY(0vh)' });
-    $(`.carousel-track`).removeClass('trans');
-    $('#item1').removeClass('trans');
-    $('#item8').removeClass('trans');
-    setTimeout(function() {
-        $(left).prop('disabled', false);
-        $(right).prop('disabled', false);
-        $(`#item${counter + 1}`).css({ visibility: 'hidden' });
-        counter--;
-        if (counter < 2) {
-            counter = 8;
-            $(`#item7, #item8`).css({ visibility: 'visible' });
-            $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vh", transform: 'translateY(0vh)' });
-            $(`#item9`).css({ visibility: 'visible' });
-            $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vh", transform: 'translateY(8vh)' });
-            $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-101.4vw)' });
-            $(`#item0, #item1, #item2`).css({ visibility: 'hidden' });
-        }
-    }, 1000);
-});
-
-    $(left).click(function() {
-        $(left).prop('disabled', true);
-        $(right).prop('disabled', true);
-        if (counter == 1) {
-            $('#item8').removeClass('trans');
-            $('#item1').removeClass('trans');
-            $('.carousel-track').removeClass('trans');
-        } else if (counter == 8) {
-        counter = 1;
-        $(`#item0, #item1`).css({ visibility: 'visible' });
-                $('#item1').addClass('trans').css({ width: "20vw", height: "68vh", transform: 'translateY(0vh)' });
-                $(`#item2`).css({ visibility: 'visible' });
-                $('.carousel-track').addClass('trans').css({ transform: 'translateX(10.35%)'});
-                $(`#item7, #item8, #item9`).css({ visibility: 'hidden' });
-                $(`#item8`).css({ width: "15vw", height: "50vh", transform: 'translateY(8vh)' });
-    }
-        var push = (((counter - 4) * - 9.714285714) -28.50714258714);
-        $(`#item${counter}`).animate({ width: "15vw", height: "50vh" }, 200);
-        $(`#item${counter + 1}`).animate({ width: "20vw", height: "68vh" }, 200);
-        $(`#item${counter + 2}`).css({ visibility: 'visible' });
-        $('.carousel-track').css({ transform: `translateX(${push}%)`});
-        $(`#item${counter + 1}`).css({ transform: 'translateY(0vh)' });
-        $(`#item${counter}`).css({ transform: 'translateY(8vh)' });
-        $(`.carousel-track`).removeClass('trans');
-        $('#item1').removeClass('trans');
-        $('#item8').removeClass('trans');
-        setTimeout(function() {
-            $(left).prop('disabled', false);
-            $(right).prop('disabled', false);
-            $(`#item${counter - 1}`).css({ visibility: 'hidden' });
-            counter++;
-            if (counter > 7) {
-                counter = 1;
-                $(`#item0, #item1`).css({ visibility: 'visible' });
-                $('#item1').addClass('trans').css({ width: "20vw", height: "68vh", transform: 'translateY(0vh)' });
-                $(`#item2`).css({ visibility: 'visible' });
-                $('.carousel-track').addClass('trans').css({ transform: 'translateX(10.4%)' });
-                $(`#item7, #item8, #item9`).css({ visibility: 'hidden' });
-                $(`#item8`).css({ width: "15vw", height: "50vh", transform: 'translateY(8vh)' });
-            }
-        }, 1000);
-    });
-});
-
-function adjustTranslateY() {
-            const div = document.getElementById('vignette');
-            const screenWidth = window.innerWidth;
-
-            // Change the translateY value based on screen width
-            let translateYValue;
-
-            if (screenWidth >= 1800) {
-                translateYValue = -20;
-            } else if (screenWidth >= 1600) {
-                translateYValue = -31;
-            } else if (screenWidth >= 1400) {
-                translateYValue = -41;
-            } else if (screenWidth >= 1200) {
-                translateYValue = -51;
-            } else if (screenWidth >= 1000) {
-                translateYValue = -61;
-            } else if (screenWidth >= 800) {
-                translateYValue = -71;
-            } else if (screenWidth >= 600) {
-                translateYValue = -81;
-            } else if (screenWidth >= 400) {
-                translateYValue = -91;
-            } else {
-                translateYValue = -101;
-            }
-
-            // Apply the transformation
-            div.style.transform = `translate(100vw ,${translateYValue}%)`;
-        }
-
-        // Listen for window resize and load events
-        window.addEventListener('resize', adjustTranslateY);
-        window.addEventListener('load', adjustTranslateY);
-            </script>
+            </div></div></div>
+            
         </div>
-        <div id="coursediv" style="position: absolute; transform: translate(-44vw, 210vh); ">
+        <div id="coursediv" style="position: absolute; transform: translate(-44vw, 1010%); ">
             <h1 id="coursework" style="width: 100vw; font-family: expletus-sans; font-size: 3vw; color:white;">-COURSEWORK</h1>
             <h1 id="coursedesc" style="width: 100vw; font-family: expletus-sans; font-size: 2.5vw; color:white;">I have undertaken the Cambridge Technicals Digital Media Diploma.<br><a href="./coursework.html">Click here</a> for my projects I have done within my coursework.</h1>
         </div></div><!--FULL PORTFOLIO, PICTURE PORTFOLIO END-->

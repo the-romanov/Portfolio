@@ -27,37 +27,37 @@ a{
 #textportfolio {
     box-sizing: border-box; /* Or content-box */
 }
-@media only screen and (max-width: 1800px) {
-    #portfolio{
-        /*transform: translate(156vw, -16vw) !important;*/
-    }
-}
 @media only screen and (max-width: 1700px) {
+    /*rightbutton leftbutton mover coursediv*/
     #portfolio{
         /*transform: translate(156vw, -20vw) !important;*/
     }
-}
-@media only screen and (max-width: 1600px) {
-    #portfolio{
-        /*transform: translate(156vw, -24vw) !important;*/
+    #mover {
+        transform: translate(-1vw, -1vw)
     }
 }
 @media only screen and (max-width: 1500px) {
     #starttext{
         transform: translate(-50vw, -24vw) !important;
     }
+    #mover {
+        transform: translate(-2vw, -2vw)
+    }
     #hoe{
         transform: translateY(5vw) !important;
     }
 }
 @media only screen and (max-width: 1400px) {
-    #portfolio{
-        transform: translate(156vw, -32vw) !important;
+    #mover {
+        transform: translate(-2vw, -5vw)
     }
 }
 @media only screen and (max-width: 1300px) {
     #portfolio{
         transform: translate(156vw, -37vw) !important;
+    }
+    #mover {
+        transform: translate(-3vw, -8vw)
     }
     #face {
         visibility: hidden;
