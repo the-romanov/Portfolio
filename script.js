@@ -30,6 +30,9 @@ document.addEventListener("scroll", function() {
     }
 });
 function checkWindowSize() {
+    if ($(window).width() <= 1300) {
+        $('#scrol').html('SCROLL OR SWIPE<br>DOWN TO START');
+    }
     if ($(window).width() <= 600) {
         // Change the text of the element with id "textElement"
         $('#scrol').text('SWIPE DOWN TO SEE THE EXTENDED PORTFOLIO');
@@ -49,7 +52,7 @@ function checkWindowSize() {
         }
     } else {
         // Optionally, revert the text if the window is resized back above 600px
-        $('#scrol').text('SCROLL OR SWIPE DOWN TO START');
+        //$('#scrol').text('SCROLL OR SWIPE DOWN TO START');
         $('#whoamidesc').html('I am a driven young person who is willing to craft excellence from hard work and from scratch.<br><br>My love for computers which started since I was months old has propelled me to become so<br>intrigued in to the digital world. Computers have become second nature to me.<br><br>Because of technology and how fast it advances, I also advance myself with working hard and<br>driving myself to change the world for better.')
         $('#grades').text('TO COME. DOING: A LEVELS')
     }
