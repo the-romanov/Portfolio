@@ -32,6 +32,12 @@ a{
     #textportfolio{
         transform: translateY(-2vw);
     }
+    #larrow{
+        transform: translate(8vw, 20vh) !important;
+    }
+    #rarrow{
+        transform: translate(18vw, 20vh) !important;
+    }
     #mover {
         transform: translate(-1vw, -1vw)
     }
@@ -49,6 +55,7 @@ a{
     #hoe{
         transform: translateY(5vw) !important;
     }
+    
 }
 @media only screen and (max-width: 1400px) {
     #textportfolio{
@@ -74,6 +81,7 @@ a{
     #scrol {
         transform: translate(70vw, 40vw) !important;
     }
+    
 }
 @media only screen and (max-width: 1200px) {
     #mover {
@@ -83,6 +91,12 @@ a{
 @media only screen and (max-width: 1100px) {
     #mover {
         transform: translate(-6vw, -12vw)
+    }
+    #larrow{
+        transform: translate(8vw, 14vh) !important;
+    }
+    #rarrow{
+        transform: translate(18vw, 14vh) !important;
     }
 }
 @media only screen and (max-width: 1000px) {
