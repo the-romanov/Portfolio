@@ -22,7 +22,7 @@ a{
     src: url("Fonts/ExpletusSans-Regular.ttf") format('truetype');
 }
 .gray{
-    background-color: #6d404091; /* #1d1d1d;*/
+    background-color: #1d1d1d; /* #1d1d1d; 6d404091*/
 }
 #textportfolio {
     box-sizing: border-box; /* Or content-box */
