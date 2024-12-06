@@ -9,6 +9,7 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
     <title>{ Roman Osborne - Personal Profile }</title>
         <script src="./JS/jquery-3.7.1.min.js"></script>
         <script src="./JS/footerheaderscript.js"></script>
+        <script src="./JS/directory.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="gray" style="height: 300vh">
@@ -16,7 +17,7 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
         <div id="front" style="position: absolute;">
             <!--LEFT SIDE START-->
             <!--BRIEF ABOUT ME START-->
-            <div id="ct" style="position: absolute; transform: translate(25vw, 5vh);">
+            <div id="coursework" style="position: absolute; transform: translate(25vw, 4vh);">
             <h1 style="transform: translateX(-2vw); font-family: expletus-sans; color: white; font-size: 3vw; text-align: center;">CAMBRIDGE TECHNICALS<br>DIGITAL MEDIA COURSEWORK</h1>
             <div style="display: flex; align-items: center; transform: translate(-2%, -30%);">
                 <img style="width: 2%; padding: 1%" src="./Dot.png">
@@ -24,59 +25,71 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
             </div>
             <h1 style="font-family: expletus-sans; color: white; transform: translateX(-3vw); font-size: 2vw; text-align: center;">Here I will be showcasing some projects I have undertaken as part of my coursework.</h1>
             <div style="transform: translate(-20vw, 2vw);">
-            <div id="u12">
+            <div id="game">
             <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">GAME DEVELOPMENT</h1>
             <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
                 <img style="width: 2%; padding: 1%" src="./Dot.png">
                 <img style="width: 33vw; height: .5vw;" src="./Line.png">
             </div>
+            <div>
+                <button onclick="gamedevelopment()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./Coursework/ShadowGame.png"></button>
+                <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-5vw, -28vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>game development skills?</h1>
+                <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -24vw); font-size: 1.5vw; text-align: right;">You will be amazed.<br><br>Explore how I single-handedly<br>made a simple FPS game with<br>the most basic mechanics required.</h1>
+                <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -21vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to crafting this<br>game which I have made myself.</h1>
+                </div>
             </div>
-            <div id="u4">
+            <div id="website" style="transform: translateY(-17vw);">
             <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">WEBSITE DEVELOPMENT</h1>
             <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
                 <img style="width: 2%; padding: 1%" src="./Dot.png">
                 <img style="width: 37vw; height: .5vw;" src="./Line.png">
             </div>
             <div>
-            <button onclick="unit4()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./ShowWeb.png"></button>
-            <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-5vw, -28vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>web development skills?</h1>
-            <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -24vw); font-size: 1.5vw; text-align: right;">You are totally in luck!<br><br>Explore the process from<br>start to finish with all<br>sorts of planning and ideas.</h1>
-            <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -21vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to crafting this<br>masterpiece on the left of this text.</h1>
-            </div></div>
-            <div id="u11" style="transform: translateY(-17vw);">
+                <button onclick="websitedevelopment()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./Coursework/ShadowWeb.png"></button>
+                <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-5vw, -28vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>web development skills?</h1>
+                <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -24vw); font-size: 1.5vw; text-align: right;">You are totally in luck!<br><br>Explore the process from<br>start to finish with all<br>sorts of planning and ideas.</h1>
+                <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -21vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to crafting this<br>masterpiece on the left of this text.</h1>
+            </div>
+            </div>
+            <div id="modelling" style="transform: translateY(-34vw);">
                 <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">3D MODELLING & DESIGN</h1>
                 <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 38vw; height: .5vw;" src="./Line.png">
+                <img style="width: 2%; padding: 1%" src="./Dot.png">
+                <img style="width: 38vw; height: .5vw;" src="./Line.png">
                 </div>
+                <div>
+                    <button onclick="modelling()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./Coursework/ShadowModelling.png"></button>
+                    <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-5vw, -28vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>web development skills?</h1>
+                    <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -24vw); font-size: 1.5vw; text-align: right;">You are totally in luck!<br><br>Explore the process from<br>start to finish with all<br>sorts of planning and ideas.</h1>
+                    <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -21vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to crafting this<br>masterpiece on the left of this text.</h1>
+                </div>    
             </div>
-            <div  id="u10" style="transform: translateY(-17vw);">
+            <div id="animation" style="transform: translateY(-51vw);">
                 <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">ANIMATION</h1>
                 <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 19vw; height: .5vw;" src="./Line.png">
+                <img style="width: 2%; padding: 1%" src="./Dot.png">
+                <img style="width: 19vw; height: .5vw;" src="./Line.png">
                 </div>
                 <div>
-                    <button onclick="unit10()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./ShadowAnimation.png"></button>
-            <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-5vw, -28vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>animation skills?</h1>
-            <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -24vw); font-size: 1.5vw; text-align: right;">You may find<br>my viewpoint interesting.<br><br>Explore the process from<br>start to finish!</h1>
-            <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -21vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to animting this<br>short film on the left of this text.</h1>
+            <button onclick="animation()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw; position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./Coursework/ShadowAnimation.png"></button>
+                <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-5vw, -28vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>animation skills?</h1>
+                <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -24vw); font-size: 1.5vw; text-align: right;">You may find<br>my viewpoint interesting.<br><br>Explore the process from<br>start to finish!</h1>
+                <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -21vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to animting this<br>short film on the left of this text.</h1>
+                </div>
             </div>
-            </div>
-            <div  id="u21" style="transform: translateY(-35vw);">
+            <div id="pitching" style="transform: translateY(-68vw);">
                 <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">PITCHING A PRODUCT</h1>
                 <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 33vw; height: .5vw;" src="./Line.png">
+                <img style="width: 2%; padding: 1%" src="./Dot.png">
+                <img style="width: 33vw; height: .5vw;" src="./Line.png">
                 </div>
-                <div>
-                <button onclick="unit21()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./ShadowPitch.png"></button>
-            <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-5vw, -28vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>pitch & speaking skills?</h1>
-            <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -24vw); font-size: 1.5vw; text-align: right;">You will discover<br>my way of selling an idea.<br><br>Explore the path of<br>how I made my idea a reality.</h1>
-            <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -21vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to animting this<br>short film on the left of this text.</h1>
+            <div>
+                <button onclick="pitchingaproduct()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./Coursework/ShadowPitch.png"></button>
+                <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-5vw, -28vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>pitch & speaking skills?</h1>
+                <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -24vw); font-size: 1.5vw; text-align: right;">You will discover<br>my way of selling an idea.<br><br>Explore the path of<br>how I made my idea a reality.</h1>
+                <h1 style="font-family: expletus-sans; color: white; transform: translate(-5vw, -21vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to animting this<br>short film on the left of this text.</h1>
             </div>
-
-                </div>
         </div>
-        </div>
+    </div>
+    </div>
 </html>

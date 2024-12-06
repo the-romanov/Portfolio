@@ -174,14 +174,23 @@ $(document).ready(function() {
     });
 });
 
-function unit4() {
+function websitedevelopment() {
     location.assign("website-development.html");
 }
-function unit10() {
+function animation() {
     location.assign("animation.html");
 }
-function unit21() {
+function modelling() {
+    location.assign("3d-modelling.html");
+}
+function gamedevelopment() {
+    location.assign("game-development");
+}
+function pitchingaproduct() {
     location.assign("pitching-a-product.html");
+}
+function amnesic() {
+    location.assign("amnesicchat");
 }
 function adjustTranslateY() {
     const div = document.getElementById('vignette');
