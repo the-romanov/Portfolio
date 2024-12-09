@@ -34,7 +34,7 @@ function checkWindowSize() {
     if ($(window).width() <= 600) {
         $('#scrol').text('SWIPE DOWN TO SEE THE EXTENDED PORTFOLIO');
         $('#grades').text('TO COME. DOING: A LEVELS');
-        if ($(window).height() <= 930) {
+        if ($(window).height() <= 1000) {
             $('#whoamidesc').html('I am a driven young person who is willing to<br>craft excellence from hard work and from scratch.<br><br>My love for computers which started since I was<br>months old has propelled me to become so<br>intrigued in to the digital world.<br><br>Computers have become second nature to me.<br>Because of technology and how fast it advances,<br><br>I also advance myself with working hard and<br>driving myself to change the world for better.');
         } else {
             $('#whoamidesc').html('I am a driven young person who is willing to craft excellence from hard work and from scratch.<br><br>My love for computers which started since I was months old has propelled me to become so<br>intrigued in to the digital world. Computers have become second nature to me.<br><br>Because of technology and how fast it advances, I also advance myself with working hard and<br>driving myself to change the world for better.');
@@ -173,24 +173,16 @@ $(document).ready(function() {
         }, 1000);
     });
 });
-
-function websitedevelopment() {
-    location.assign("website-development.html");
+function gitHub() {
+    location.assign("https://github.com/the-romanov/");
 }
-function animation() {
-    location.assign("animation.html");
-}
-function modelling() {
-    location.assign("3d-modelling.html");
-}
-function gamedevelopment() {
-    location.assign("game-development");
-}
-function pitchingaproduct() {
-    location.assign("pitching-a-product.html");
-}
-function amnesic() {
-    location.assign("amnesicchat");
+function cv() {
+    const fileUrl = './Downloads/CV.pdf'; 
+    const a = document.createElement('a');
+    a.href = fileUrl; 
+    a.download = 'cv.pdf'; 
+    a.click();
+    a.remove();
 }
 function adjustTranslateY() {
     const div = document.getElementById('vignette');

@@ -22,10 +22,15 @@ a{
     src: url("Fonts/ExpletusSans-Regular.ttf") format('truetype');
 }
 .gray{
-    background-color: #1d1d1d; /* #1d1d1d; 6d404091*/
+    background-color: #6d404091; /* #1d1d1d; 6d404091*/
 }
 #textportfolio {
     box-sizing: border-box; /* Or content-box */
+}
+@media only screen and (max-width: 1800px) {
+    #scrollportfolio {
+        transform: translate(-0.4%, -3%) !important;
+    }
 }
 @media only screen and (max-width: 1700px) {
     /*rightbutton leftbutton mover coursediv*/
@@ -38,8 +43,19 @@ a{
     #rarrow{
         transform: translate(18vw, 20vh) !important;
     }
-    #mover {
-        transform: translate(-1vw, -1vw)
+    #scrollportfolio {
+        transform: translate(-.7%, -0%) !important;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    #scrollportfolio {
+        transform: translate(-1.1%, -0%) !important;
+    }
+    #larrow{
+        transform: translate(8vw, 23vh) !important;
+    }
+    #rarrow{
+        transform: translate(18vw, 23vh) !important;
     }
 }
 @media only screen and (max-width: 1500px) {
@@ -49,29 +65,25 @@ a{
     #starttext{
         transform: translate(-50vw, -24vw) !important;
     }
-    #mover {
-        transform: translate(-2vw, -2vw)
+    #scrollportfolio {
+        transform: translate(-1.3%, -4%) !important;
     }
-    #hoe{
-        transform: translateY(5vw) !important;
-    }
-    
 }
 @media only screen and (max-width: 1400px) {
     #textportfolio{
         transform: translateY(-6vw);
     }
-    #mover {
-        transform: translate(-2vw, -5vw)
+    #scrollportfolio {
+        transform: translate(-1.5%, -5%) !important;
+    }
+    #larrow{
+        transform: translate(8vw, 23vh) !important;
+    }
+    #rarrow{
+        transform: translate(18vw, 23vh) !important;
     }
 }
 @media only screen and (max-width: 1300px) {
-    /*#portfolio{
-        transform: translate(156vw, -37vw) !important;
-    }*/
-    #mover {
-        transform: translate(-3vw, -8vw)
-    }
     #face {
         visibility: hidden;
     }
@@ -81,27 +93,39 @@ a{
     #scrol {
         transform: translate(70vw, 40vw) !important;
     }
-    
+    #scrollportfolio {
+        transform: translate(-2.1%, -6%) !important;
+    }
 }
 @media only screen and (max-width: 1200px) {
-    #mover {
-        transform: translate(-5vw, -10vw)
+    #fullscroll {
+        transform: translateX(0.5%);
+    }
+    #scrollportfolio {
+        transform: translate(-2.6%, -9%) !important;
     }
 }
 @media only screen and (max-width: 1100px) {
-    #mover {
-        transform: translate(-6vw, -12vw)
-    }
     #larrow{
-        transform: translate(8vw, 14vh) !important;
+        transform: translate(8vw, 16vh) !important;
     }
     #rarrow{
-        transform: translate(18vw, 14vh) !important;
+        transform: translate(18vw, 16vh) !important;
     }
+    #scrollportfolio {
+        transform: translate(-3%, -18%) !important;
+    }
+    
 }
 @media only screen and (max-width: 1000px) {
-    #mover {
-        transform: translate(-7vw, -16vw)
+    #scrollportfolio {
+        transform: translate(-4.4%, -22%) !important;
+    }
+    #larrow{
+        transform: translate(8vw, 19vh) !important;
+    }
+    #rarrow{
+        transform: translate(18vw, 19vh) !important;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -111,56 +135,79 @@ a{
     #mover {
         transform: translate(-9vw, -19vw)
     }
+    #scrollportfolio {
+        transform: translate(-4.6%, -25%) !important;
+    }
+    #fullscroll {
+        transform: translateX(1.25%);
+    }
+    
+}
+@media only screen and (max-width: 850px) {
+    #scrollportfolio {
+        transform: translate(-4%, -27%) !important;
+    }
+    #lshadow {
+        transform: translateX(2%) !important;
+    }
+    #rshadow {
+        transform: translateX(10%) !important;
+    }
 }
 @media only screen and (max-width: 800px) {
-    /*#portfolio{
-        transform: translate(156vw, -82vw) !important;
-    }*/
-    #mover {
-        transform: translate(-11vw, -24vw)
+    #scrollportfolio {
+        transform: translate(-4.5%, -28%) !important;
+    }
+    #fullscroll {
+        transform: translateX(1.95%);
+    }
+    #lshadow {
+        transform: translateX(4%) !important;
+    }
+    #rshadow {
+        transform: translateX(8%) !important;
     }
 }
 @media only screen and (max-width: 700px) {
-    /*#portfolio{
-        transform: translate(156vw, -102vw) !important;
-    }*/
-    #mover {
-        transform: translate(-14vw, -30vw)
+    #scrollportfolio {
+        transform: translate(-6%, -30%) !important;
     }
 }
 @media only screen and (max-width: 650px) {
-    #mover {
-        transform: translate(-16vw, -35vw)
+    #scrollportfolio {
+        transform: translate(-6.5%, -32%) !important;
     }
 }
 @media only screen and (max-width: 600px) {
-    #mover {
-        transform: translate(-18vw, -38vw)
+    #portfolio {
+        transform: translate(156vw, -118vw) !important;
+    }
+    #fullscroll {
+        transform: translateX(2%);
+    }
+    #scrollportfolio {
+        transform: translate(-7%, -33%) !important;
     }
     #textportfolio {
-        transform: translate(-100vw, 60vw) !important;
+        transform: translate(-103vw, 85vw) !important;
     }
     #hoe {
         font-size: 6vw !important;
-        transform: translate(90vw, -140vw) !important;
+        transform: translateX(13vw) !important;
     }
     #hoemainline {
         width:73vw !important;
     }
-    #testcard {
-        width: 40vw !important;
-        transform: translate(-10vw, 20vw) !important;
-    }
     #right {
         width: 15vw !important;
-        transform: translate(37vw, 45vw)!important;
+        transform: translate(37vw, 45vw) !important;
     }
     #left {
         width: 15vw !important;
         transform: translate(-49vw, 45vw)!important;
     }
     #hoeline {
-        transform: translate(85vw, -142vw) !important;
+       transform: translate(9vw, -2vw) !important;
     }
     #cards {
         transform: translate(122vw, -142vw) !important;
@@ -169,19 +216,19 @@ a{
         visibility: hidden;
     }
     #facecomp{
-        visibility: hidden;
+        visibility: hidden !important;
     }
     #phoneface {
-        visibility: visible !important;
+         visibility: visible !important;
     }
     #phonefacebody {
-        visibility: visible !important;
+        visibility: visible !important; 
     }
     #aboutme{
         transform: translate(31vw, 0vw) !important;
     }
     #scrol{
-        transform: translate(21vw, 55vw) !important;
+        transform: translate(37vw, 45vw) !important;
     }
     #portfolio {
         transform: translate(-100vw,0)
@@ -276,7 +323,7 @@ a{
         font-size: 2.1vw !important;
     }
 }
-@media only screen and (max-height: 930px) and (max-width: 600px) {
+@media only screen and (max-height: 1000px) and (max-width: 600px) {
     #portfolio{
         transform: translate(-100vw, -3vw) !important;
     }
@@ -466,36 +513,61 @@ a{
 @media only screen and (max-height: 500px) and (max-width: 600px) {
 
 }
-@media only screen and (max-width: 550px) {
-    #mover {
-        transform: translate(-20vw, -43vw)
+@media only screen and (max-width: 560px) {
+    #larrow{
+        transform: translate(12vw, 13vh) !important;
     }
-
+    #rarrow{
+        transform: translate(14vw, 13vh) !important;
+    }
+    #scrollportfolio {
+        transform: translate(-7.8%, -36%) !important;
+    }
+    #textportfolio {
+        transform: translate(-103vw, 72vw) !important;
+    }
 }
 @media only screen and (max-width: 512px) {
-    #mover {
-        transform: translate(-21vw, -48vw)
+    #scrollportfolio {
+        transform: translate(-9%, -37%) !important;
     }
-    #portfolio {
-        transform: translate(156vw, -118vw) !important;
+    #rshadow {
+        transform: translateX(2%) !important;
+    }
+    #textportfolio {
+        transform: translate(-103vw, 55vw) !important;
     }
 }
 @media only screen and (max-width: 450px) {
-
+    #larrow{
+        transform: translate(12vw, 13vh) !important;
+    }
+    #rarrow{
+        transform: translate(14vw, 13vh) !important;
+    }
     #portfolio {
         transform: translate(156vw, -145vw) !important;
     }
+    #scrollportfolio {
+        transform: translate(-9.4%, -38%) !important;
+    }
+    #textportfolio {
+        transform: translate(-103vw, 56vw) !important;
+    }
 }
-@media only screen and (max-width: 320px){
+/*@media only screen and (max-width: 320px){
     #portfolio {
         transform: translate(156vw, -235vw) !important;
+    }
+    #scrollportfolio {
+        transform: translate(-70%, -30%) !important;
     }
 }
 @media only screen and (max-width: 240px) {
     #textportfolio {
         transform: translate(-100vw, -45vw) !important;
     }
-}
+}*/
 
 
 
