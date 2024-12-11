@@ -61,91 +61,52 @@ body {
 }
 @media only screen and (max-width: 1400px) {
     #scrollportfolio {
-       transform: translate(-2.5vw, -4vw);
+       transform: translateX(-2.5vw); /* -4vw */
     }
 }
 @media only screen and (max-width: 1300px) {
     #scrollportfolio {
-       transform: translate(-2.5vw, -7vw);
+       /* transform: translate(-2.5vw, -7vw); */
     }
 }
 @media only screen and (max-width: 1200px) {
     #scrollportfolio {
-       transform: translate(-4.5vw, -10vw);
+       transform: translateX(-4.5vw); /* -10vw */
     }
 }
 @media only screen and (max-width: 1000px) {
     #scrollportfolio {
-       transform: translate(-7.5vw, -16vw);
+       transform: translateX(-5.5vw); /* -16vw */
     }
 }
 @media only screen and (max-width: 900px) {
     #scrollportfolio {
-       transform: translate(-9.5vw, -20vw);
+       transform: translateX(-6.5vw); /* -20vw */
     }
 }
 @media only screen and (max-width: 800px) {
     #scrollportfolio {
-       transform: translate(-12.5vw, -27vw);
+       transform: translateX(-7.5vw); /* -27vw */
     }
 }
 @media only screen and (max-width: 700px) {
     #scrollportfolio {
-       transform: translate(-14.5vw, -32vw);
+       transform: translateX(-9.5vw); /* -32vw */
     }
 }
 @media only screen and (max-width: 600px) {
     #scrollportfolio {
-       transform: translate(-18vw, -39vw);
+       transform: translateX(-13vw); /* -39vw */
     }
 }
 @media only screen and (max-width: 550px) {
     #scrollportfolio {
-       transform: translate(-21vw, -44vw);
+       transform: translateX(-15vw); /* -44vw */
     }
 }
 @media only screen and (max-width: 500px) {
     #scrollportfolio {
-       transform: translate(-21vw, -49vw);
+       transform: translateX(-17vw); /* -49vw */
     }
 }
-@media only screen and (max-width: 400px) {
-    #scrollportfolio {
-       transform: translate(-145vw, -25vw);
-    }
-}
-@media only screen and (max-height: 900px) {
-    #verticalscroll {
-        transform: translateY(7vh);
-     }
-}
-@media only screen and (max-height: 750px) {
-    #verticalscroll {
-        transform: translateY(15vh);
-     }
-}
-@media only screen and (max-height: 675px) {
-    #verticalscroll {
-        transform: translateY(20vh);
-     }
-}
-@media only screen and (max-height: 600px) {
-    #verticalscroll {
-        transform: translateY(26vh);
-     }
-}
-@media only screen and (max-height: 535px) {
-    #verticalscroll {
-        transform: translateY(35vh);
-     }
-}
-@media only screen and (max-height: 475px) {
-    #verticalscroll {
-        transform: translateY(45vh);
-     }
-}
-@media only screen and (max-height: 455px) {
-    #verticalscroll {
-        transform: translateY(60vh);
-     }
-}
+/* -10.5, 20.5 | 0.512195122, 1*/

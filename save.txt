@@ -274,3 +274,54 @@
         visibility: visible !important; 
     }
 }
+
+--
+
+@media only screen and (max-height: 675px) {
+    #verticalscroll {
+        transform: translateY(20vh);
+     }
+}
+@media only screen and (max-height: 600px) {
+    #verticalscroll {
+        transform: translateY(26vh);
+     }
+}
+@media only screen and (max-height: 535px) {
+    #verticalscroll {
+        transform: translateY(35vh);
+     }
+}
+@media only screen and (max-height: 475px) {
+    #verticalscroll {
+        transform: translateY(45vh);
+     }
+}
+@media only screen and (max-height: 455px) {
+    #verticalscroll {
+        transform: translateY(60vh);
+     }
+}
+
+--
+
+@media only screen and (max-height: 900px) {
+    #verticalscroll {
+        transform: translateY(7vh);
+     }
+}
+@media only screen and (max-height: 750px) {
+    #verticalscroll {
+        transform: translateY(15vh);
+     }
+}
+@media only screen and (max-height: 500px) {
+    #verticalscroll {
+        transform: translateY(20vh);
+     }
+}
+@media only screen and (max-height: 330px) {
+    #verticalscroll {
+        transform: translateY(20vh);
+     }
+}
