@@ -113,10 +113,26 @@ function cv() {
     var lPortal = document.getElementById('lportal');
     var rPortal = document.getElementById('rportal');
 
-    if ((width / 2) * 3.5 < height && (width / 2) * 3.75 <= height) {
-        fullscrollElement.style.transform = 'translateY(-52vw)';
+    if ((width / 2) * 4.25 < height && (width / 2) * 4.5 <= height) {
+        fullscrollElement.style.transform = 'translateY(-62vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 32vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 32vw)', 'important');
+    } else if ((width / 2) * 4 < height && (width / 2) * 4.25 <= height) {
+        fullscrollElement.style.transform = 'translateY(-59vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 30vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 30vw)', 'important');
+    } else if ((width / 2) * 3.75 < height && (width / 2) * 4 <= height) {
+        fullscrollElement.style.transform = 'translateY(-57vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 24vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 24vw)', 'important');
+    } else if ((width / 2) * 3.5 < height && (width / 2) * 3.75 <= height) {
+        fullscrollElement.style.transform = 'translateY(-51vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 20vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 20vw)', 'important');
     } else if ((width / 2) * 3.25 < height && (width / 2) * 3.5 <= height) {
-        fullscrollElement.style.transform = 'translateY(-48vw)';
+        fullscrollElement.style.transform = 'translateY(-45vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 20vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 20vw)', 'important');
     } else if ((width / 2) * 3 < height && (width / 2) * 3.25 <= height) {
         fullscrollElement.style.transform = 'translateY(-40vw)';
         lPortal.style.setProperty('transform', 'translate(64vw, 20vw)', 'important');
