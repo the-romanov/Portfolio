@@ -1,6 +1,8 @@
 <!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN” “http://www.w3.org/TR/html4/strict.dtd">
 <!--240 PX WIDTH * 320 PX HEIGHT IS THE LEAST RESOLUTION IT CAN HANDLE
 
+FIX TRANSITION & LESS THAN 450 PX!
+
 1920 PX WIDHT * 1080 PX WIDTH IS THE MOST RESOLUTION IT CAN HANDLE.
 
 ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
@@ -118,12 +120,12 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
         </div>
         <div id="fullscroll">
         <div>
-            <div style="z-index: 9; position: fixed; transform: translate(64vw,-1vw) !important;">
-                <button id="rarrow" class="buttons" style="height: 10vw; width: 8vw; position: fixed; transform: translate(18vw, 27vh); z-index: 15; position: absolute;"><img style="transform: translate(-3vw, -9vh); width:6vw; z-index: 10; position: absolute;" src="./FrontPage/ArrowShowcase.png"></button>
+            <div id="lportal" style="z-index: 9; position: fixed; transform: translate(64vw,-1vw);">
+                <button id="rarrow" class="buttons" style="height: 10vw; width: 8vw; position: fixed; transform: translate(16vw, 20vh); z-index: 15; position: absolute;"><img style="width:6vw; z-index: 10; position: absolute;" src="./FrontPage/ArrowShowcase.png"></button>
                 <img id="lshadow" style="position: relative; z-index: 3; height: 65vw; width:33vw;" src="./FrontPage/ShowcaseEndFlip.png">
             </div>
-            <div style="z-index: 9; position: fixed; transform: translate(-5vw, -1vw) !important;">
-                <button id="larrow" class="buttons" style="height: 10vw; width: 8vw; position: fixed; transform: translate(8vw, 27vh); z-index: 15; position: absolute;"><img style="transform: translate(-3vw, -9vh); width:6vw; z-index: 10; position: absolute;" src="./FrontPage/ArrowFlip.png"></button>
+            <div id="rportal" style="z-index: 9; position: fixed; transform: translate(-5vw, -1vw);">
+                <button id="larrow" class="buttons" style="height: 10vw; width: 8vw; position: fixed; transform: translate(5vw, 20vh); z-index: 15; position: absolute;"><img style="width:6vw; z-index: 10; position: absolute;" src="./FrontPage/ArrowFlip.png"></button>
                 <img id="rshadow" style="position: relative; z-index: 3; height: 65vw; width:33vw;" src="./FrontPage/ShowcaseEnd.png">         
             </div>
         </div>

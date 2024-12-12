@@ -110,18 +110,53 @@ function cv() {
     var height = window.innerHeight;
     var grei = document.getElementsByClassName('gray');
     var fullscrollElement = document.getElementById('fullscroll');
-    
+    var lPortal = document.getElementById('lportal');
+    var rPortal = document.getElementById('rportal');
 
-    if ((width / 2) * 1.5 < height) {
-        for (var i = 0; i < grei.length; i++) {
-        grei[i].style.backgroundColor = '#ffffff';
-        }
+    if ((width / 2) * 3.5 < height && (width / 2) * 3.75 <= height) {
+        fullscrollElement.style.transform = 'translateY(-52vw)';
+    } else if ((width / 2) * 3.25 < height && (width / 2) * 3.5 <= height) {
+        fullscrollElement.style.transform = 'translateY(-48vw)';
+    } else if ((width / 2) * 3 < height && (width / 2) * 3.25 <= height) {
+        fullscrollElement.style.transform = 'translateY(-40vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 20vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 20vw)', 'important');
+    } else if ((width / 2) * 2.75 < height && (width / 2) * 3 <= height) {
+        fullscrollElement.style.transform = 'translateY(-38vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 16vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 16vw)', 'important');
+    } else if ((width / 2) * 2.5 < height && (width / 2) * 2.75 <= height) {
+        fullscrollElement.style.transform = 'translateY(-30vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 12vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 12vw)', 'important');
+    } else if ((width / 2) * 2.25 < height && (width / 2) * 2.5 <= height) {
+        fullscrollElement.style.transform = 'translateY(-30vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 10vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 10vw)', 'important');
+    } else if ((width / 2) * 2 < height && (width / 2) * 2.25 <= height) {
+        fullscrollElement.style.transform = 'translateY(-25vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 8vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 8vw)', 'important');
+    } else if ((width / 2) * 1.75 < height && (width / 2) * 2 <= height) { 
+        fullscrollElement.style.transform = 'translateY(-20vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 6vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 6vw)', 'important');
+    } else if ((width / 2) * 1.5 < height && (width / 2) * 1.75 <= height) {
+        fullscrollElement.style.transform = 'translateY(-15vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 4vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 4vw)', 'important');
+    } else if ((width / 2) * 1.2 < height && (width / 2) * 1.5 <= height) {
         fullscrollElement.style.transform = 'translateY(-10vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, 2vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, 2vw)', 'important');
+    } else if ((width / 2) * 1 < height && (width / 2) * 1.2 <= height) {
+        fullscrollElement.style.transform = 'translateY(-5vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, -1vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, -1vw)', 'important');
     } else {
-        for (var j = 0; j < grei.length; j++) {
-            grei[j].style.backgroundColor = '#1d1d1d';
-        }
         fullscrollElement.style.transform = 'translateY(-0vw)';
+        lPortal.style.setProperty('transform', 'translate(64vw, -1vw)', 'important');
+        rPortal.style.setProperty('transform', 'translate(-5vw, -1vw)', 'important');
     }
 }
 
