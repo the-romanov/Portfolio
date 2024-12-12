@@ -127,20 +127,19 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
                 <img id="rshadow" style="position: relative; z-index: 3; height: 65vw; width:33vw;" src="./FrontPage/ShowcaseEnd.png">         
             </div>
         </div>
-        <div id="verticalscroll" style="transform: translateY(-4vw);">
+        <div id="verticalscroll">
         <div id="scrollportfolio">
-            <!--FIX VERTICAL CARDS & FIND RATIO ETC-->
-    <div style="display: flex; justify-content: left; position: static; transform: translateX(-28.50714258714%); z-index: 2;" class="carousel-track"> 
-                            <button id="item0" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vw); width: 15vw; height: 50vh;" onclick="amnesic()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/ACShowcase.png"></button>
-                            <button id="item1" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vw); width: 15vw; height: 50vh;" onclick=""><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/HiddenShowcase.png"></button>
-                            <button id="item2" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vw); width: 15vw; height: 50vh;" onclick="websitedevelopment()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/WebShowcase.png"></button>
-                            <button id="item3" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vw); width: 15vw; height: 50vh;" onclick="animation()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/AnimationShowcase.png"></button>
-                            <button id="item4" class="carousel-item buttons" style="transform: translateY(8vw); width: 15vw; height: 50vh;" onclick="modelling()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/ModellingShowcase.png"></button>
-                            <button id="item5" class="carousel-item buttons" style="transform: translateY(4vw); width: 20vw; height: 68vh;" onclick="gamedevelopment()"><img style="width:100%; z-index: 2; position: relative;" src="./Showcase/GameShowcase.png"></button>
-                            <button id="item6" class="carousel-item buttons" style="transform: translateY(8vw); width: 15vw; height: 50vh;" onclick="pitchingaproduct()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/PitchShowcase.png"></button>
-                            <button id="item7" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vw); width: 15vw; height: 50vh;" onclick="amnesic()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/ACShowcase.png"></button>
-                            <button id="item8" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vw); width: 15vw; height: 50vh;" onclick=""><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/HiddenShowcase.png"></button>
-                            <button id="item9" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vw); width: 15vw; height: 50vh;" onclick="websitedevelopment()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/WebShowcase.png"></button>
+    <div style="display: flex; transform: translateX(-28.50714258714%); z-index: 2;" class="carousel-track"> 
+                            <button id="item0" class="carousel-item buttons" style="visibility: hidden; width: 15vw; height: 50vh;" onclick="amnesic()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/ACShowcase.png"></button>
+                            <button id="item1" class="carousel-item buttons" style="visibility: hidden; width: 15vw; height: 50vh;" onclick=""><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/HiddenShowcase.png"></button>
+                            <button id="item2" class="carousel-item buttons" style="visibility: hidden; width: 15vw; height: 50vh;" onclick="websitedevelopment()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/WebShowcase.png"></button>
+                            <button id="item3" class="carousel-item buttons" style="visibility: hidden; width: 15vw; height: 50vh;" onclick="animation()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/AnimationShowcase.png"></button>
+                            <button id="item4" class="carousel-item buttons" style="width: 15vw; height: 50vh;" onclick="modelling()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/ModellingShowcase.png"></button>
+                            <button id="item5" class="carousel-item buttons" style="width: 20vw; height: 68vh;" onclick="gamedevelopment()"><img style="width:100%; z-index: 2; position: relative;" src="./Showcase/GameShowcase.png"></button>
+                            <button id="item6" class="carousel-item buttons" style="width: 15vw; height: 50vh;" onclick="pitchingaproduct()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/PitchShowcase.png"></button>
+                            <button id="item7" class="carousel-item buttons" style="visibility: hidden; width: 15vw; height: 50vh;" onclick="amnesic()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/ACShowcase.png"></button>
+                            <button id="item8" class="carousel-item buttons" style="visibility: hidden; width: 15vw; height: 50vh;" onclick=""><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/HiddenShowcase.png"></button>
+                            <button id="item9" class="carousel-item buttons" style="visibility: hidden; width: 15vw; height: 50vh;" onclick="websitedevelopment()"><img style="width:100%;  z-index: 2; position: relative;" src="./Showcase/WebShowcase.png"></button>
                 </div>
             </div>
             </div>
@@ -154,25 +153,23 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
     </div><!--PAGE END-->
     </body>
     <style>
-        .carousel-container {
-        position: relative;
-        width: 70%;
-        margin: 50px auto;
-        overflow: hidden;
-    }
     .carousel-item {
         transition: transform 1s, width 1s, height 1s;
         margin: 20px;
+        position: static;
+        top: 0%;
+    }
+    .carousel-track {
+        transition: transform 0.5s ease;
+        align-items: center;
     }
     .carousel {
         overflow: hidden;
         width: 100vw;
     }
-    .carousel-track {
-        transition: transform 0.5s ease;
-    }
     .trans {
         transition: none !important;
     }
+    
     </style>
 </html>

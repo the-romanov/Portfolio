@@ -110,3 +110,15 @@ body {
     }
 }
 /* -10.5, 20.5 | 0.512195122, 1*/
+
+@media (max-width: 50vw) and (max-height: 100vh) {
+    .gray {
+        background-color: lightblue;
+    }
+}
+
+@media (max-height: 100vw) and (max-width: 50vh) {
+    .gray {
+        background-color: lightgreen;
+    }
+}
