@@ -24,6 +24,7 @@ body {
     height: 100%;
     max-width: 100vw;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 #front {
     position: relative;
@@ -54,78 +55,4 @@ body {
 }
 #textportfolio {
     box-sizing: border-box; /* Or content-box */
-}
-/*
-@media only screen and (max-width: 1800px) {
- #scrollportfolio {
-    transform: translate(-1vw, -0vw);
- }
-}
-@media only screen and (max-width: 1500px) {
-    #scrollportfolio {
-       transform: translate(-2.5vw, -2vw);
-    }
-}
-@media only screen and (max-width: 1400px) {
-    #scrollportfolio {
-       transform: translateX(-2.5vw); /* -4vw 
-    }
-}
-@media only screen and (max-width: 1300px) {
-    #scrollportfolio {
-       /* transform: translate(-2.5vw, -7vw); 
-    }
-}
-@media only screen and (max-width: 1200px) {
-    #scrollportfolio {
-       transform: translateX(-4.5vw); /* -10vw 
-    }
-}
-@media only screen and (max-width: 1000px) {
-    #scrollportfolio {
-       transform: translateX(-5.5vw); /* -16vw 
-    }
-}
-@media only screen and (max-width: 900px) {
-    #scrollportfolio {
-       transform: translateX(-6.5vw); /* -20vw 
-    }
-}
-@media only screen and (max-width: 800px) {
-    #scrollportfolio {
-       transform: translateX(-7.5vw); /* -27vw 
-    }
-}
-@media only screen and (max-width: 700px) {
-    #scrollportfolio {
-       transform: translateX(-9.5vw); /* -32vw 
-    }
-}
-@media only screen and (max-width: 600px) {
-    #scrollportfolio {
-       transform: translateX(-13vw); /* -39vw 
-    }
-}
-@media only screen and (max-width: 550px) {
-    #scrollportfolio {
-       transform: translateX(-15vw); /* -44vw 
-    }
-}
-@media only screen and (max-width: 500px) {
-    #scrollportfolio {
-       transform: translateX(-17vw); /* -49vw 
-    }
-}
-/* -10.5, 20.5 | 0.512195122, 1
-
-@media (max-width: 50vw) and (max-height: 100vh) {
-    .gray {
-        background-color: lightblue;
-    }
-}
-
-@media (max-height: 100vw) and (max-width: 50vh) {
-    .gray {
-        background-color: lightgreen;
-    }
 }

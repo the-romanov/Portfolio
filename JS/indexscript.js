@@ -1,3 +1,4 @@
+// REDO BELOW
 $(document).ready(function() {
     var counter = 5;
     var left = $('#larrow');
@@ -14,21 +15,26 @@ $(document).ready(function() {
         } else if (counter === 1) {
             counter = 8;
             $(`#item7, #item8`).css({ visibility: 'visible' });
-            $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vh" });
+            $(`#item8img`).addClass('trans');
+            $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vw" });
+            $(`#item8img`).css({width: "20vw"});
             $(`#item9, #item6`).css({ visibility: 'visible' });
-            $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vh"});
+            $(`#item1img`).addClass('trans');
+            $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vw"});
+            $(`#item1img`).css({width: "15vw"});
             $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-57.65%)' });
             $(`#item0, #item1, #item2`).css({ visibility: 'hidden' });
         }
 
-        var push = (((counter - 6) * -9.714285714) - 28.50714258714);
-        $(`#item${counter}`).stop(true, true).animate({ width: "15vw", height: "50vh" }, 200);
-        $(`#item${counter - 1}`).stop(true, true).animate({ width: "20vw", height: "68vh" }, 200);
+        var push = (((counter - 6) * -17.722) - 28.50714258714); //(((counter - 6) * -9.714285714) - 28.50714258714)
+        $(`#item${counter}`).css({ width: "15vw", height: "50vw" }, 200);
+        $(`#item${counter}img`).stop(true, true).animate({width: "15vw"}, 1000);
+        $(`#item${counter - 1}`).css({ width: "20vw", height: "68vw" }, 200);
+        $(`#item${counter -1}img`).stop(true, true).animate({width: "20vw"}, 1000);
         $(`#item${counter - 2}`).css({ visibility: 'visible' });
         $(`.carousel-track`).css({ transform: `translateX(${push}%)` });
         $(`.carousel-track`).removeClass('trans');
-        $('#item1').removeClass('trans');
-        $('#item8').removeClass('trans');
+        $('#item1, #item1img, #item8, #item8img').removeClass('trans');
 
         setTimeout(function() {
             $(left).prop('disabled', false);
@@ -39,10 +45,12 @@ $(document).ready(function() {
             if (counter < 2) {
                 counter = 8;
                 $(`#item7, #item8`).css({ visibility: 'visible' });
-                $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vh"});
+                $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vw"});
+                $(`#item8img`).css({width: "20vw"});
                 $(`#item9`).css({ visibility: 'visible' });
-                $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vh"});
-                $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-57.65%)' });
+                $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vw"});
+                $(`#item1img`).css({width: "15vw"});
+                $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-81.9%)' });
                 $(`#item0, #item1, #item2`).css({ visibility: 'hidden' });
             }
         }, 1000);
@@ -59,16 +67,22 @@ $(document).ready(function() {
         } else if (counter === 8) {
             counter = 1;
             $(`#item0, #item1`).css({ visibility: 'visible'});
-            $('#item1').addClass('trans').css({ width: "20vw", height: "68vh"});
+            $(`#item1img`).addClass('trans');
+            $(`#item1`).addClass('trans').css({ width: "20vw", height: "68vw"});
+            $(`#item1img`).css({width: "20vw"});
             $(`#item2`).css({ visibility: 'visible' });
+            $(`#item8img`).addClass('trans')
+            $(`#item8`).css({width: "15vw", height: "68vw"});
+            $(`#item8img`).css({width: "15vw"});
             $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(10.35%)' });
             $(`#item7, #item8, #item9`).css({ visibility: 'hidden' });
-            $(`#item8`).css({ width: "15vw", height: "50vh"});
         }
 
-        var push = (((counter - 4) * -9.714285714) - 28.50714258714);
-        $(`#item${counter}`).stop(true, true).animate({ width: "15vw", height: "50vh" }, 200);
-        $(`#item${counter + 1}`).stop(true, true).animate({ width: "20vw", height: "68vh" }, 200);
+        var push = (((counter - 4) * -17.722) - 28.50714258714);
+        $(`#item${counter}`).css({ width: "15vw", height: "50vw" }, 200);
+        $(`#item${counter}img`).stop(true, true).animate({width: "15vw"}, 1000);
+        $(`#item${counter + 1}`).css({ width: "20vw", height: "68vw" }, 200);
+        $(`#item${counter + 1}img`).stop(true, true).animate({width: "20vw"}, 1000);
         $(`#item${counter + 2}`).css({ visibility: 'visible' });
         $(`.carousel-track`).css({ transform: `translateX(${push}%)` });
         $(`.carousel-track`).removeClass('trans');
@@ -80,15 +94,16 @@ $(document).ready(function() {
             $(right).prop('disabled', false);
             $(`#item${counter - 1}`).css({ visibility: 'hidden' });
             counter++;
-
             if (counter > 7) {
                 counter = 1;
                 $(`#item0, #item1`).css({ visibility: 'visible' });
-                $('#item1').addClass('trans').css({ width: "20vw", height: "68vh"});
+                $('#item1').addClass('trans').css({ width: "20vw", height: "68vw"});
+                $(`#item1img`).css({width: "20vw"});
                 $(`#item2`).css({ visibility: 'visible' });
-                $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(10.4%)' });
+                $(`#item8img`).css({ width: "15vw"});
+                $(`#item9img`).css({ width: "15vw"});
+                $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(42.57%)' });
                 $(`#item7, #item8, #item9`).css({ visibility: 'hidden' });
-                $(`#item8`).css({ width: "15vw", height: "50vh"});
             }
         }, 1000);
     });
@@ -104,77 +119,3 @@ function cv() {
     a.click();
     a.remove();
 }
-
-  function checkViewport() {
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-    var grei = document.getElementsByClassName('gray');
-    var fullscrollElement = document.getElementById('fullscroll');
-    var lPortal = document.getElementById('lportal');
-    var rPortal = document.getElementById('rportal');
-
-    if ((width / 2) * 4.25 < height && (width / 2) * 4.5 <= height) {
-        fullscrollElement.style.transform = 'translateY(-62vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 32vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 32vw)', 'important');
-    } else if ((width / 2) * 4 < height && (width / 2) * 4.25 <= height) {
-        fullscrollElement.style.transform = 'translateY(-59vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 30vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 30vw)', 'important');
-    } else if ((width / 2) * 3.75 < height && (width / 2) * 4 <= height) {
-        fullscrollElement.style.transform = 'translateY(-57vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 24vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 24vw)', 'important');
-    } else if ((width / 2) * 3.5 < height && (width / 2) * 3.75 <= height) {
-        fullscrollElement.style.transform = 'translateY(-51vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 20vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 20vw)', 'important');
-    } else if ((width / 2) * 3.25 < height && (width / 2) * 3.5 <= height) {
-        fullscrollElement.style.transform = 'translateY(-45vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 20vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 20vw)', 'important');
-    } else if ((width / 2) * 3 < height && (width / 2) * 3.25 <= height) {
-        fullscrollElement.style.transform = 'translateY(-40vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 20vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 20vw)', 'important');
-    } else if ((width / 2) * 2.75 < height && (width / 2) * 3 <= height) {
-        fullscrollElement.style.transform = 'translateY(-38vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 16vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 16vw)', 'important');
-    } else if ((width / 2) * 2.5 < height && (width / 2) * 2.75 <= height) {
-        fullscrollElement.style.transform = 'translateY(-30vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 12vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 12vw)', 'important');
-    } else if ((width / 2) * 2.25 < height && (width / 2) * 2.5 <= height) {
-        fullscrollElement.style.transform = 'translateY(-30vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 10vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 10vw)', 'important');
-    } else if ((width / 2) * 2 < height && (width / 2) * 2.25 <= height) {
-        fullscrollElement.style.transform = 'translateY(-25vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 8vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 8vw)', 'important');
-    } else if ((width / 2) * 1.75 < height && (width / 2) * 2 <= height) { 
-        fullscrollElement.style.transform = 'translateY(-20vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 6vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 6vw)', 'important');
-    } else if ((width / 2) * 1.5 < height && (width / 2) * 1.75 <= height) {
-        fullscrollElement.style.transform = 'translateY(-15vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 4vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 4vw)', 'important');
-    } else if ((width / 2) * 1.2 < height && (width / 2) * 1.5 <= height) {
-        fullscrollElement.style.transform = 'translateY(-10vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, 2vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, 2vw)', 'important');
-    } else if ((width / 2) * 1 < height && (width / 2) * 1.2 <= height) {
-        fullscrollElement.style.transform = 'translateY(-5vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, -1vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, -1vw)', 'important');
-    } else {
-        fullscrollElement.style.transform = 'translateY(-0vw)';
-        lPortal.style.setProperty('transform', 'translate(64vw, -1vw)', 'important');
-        rPortal.style.setProperty('transform', 'translate(-5vw, -1vw)', 'important');
-    }
-}
-
-window.addEventListener('resize', checkViewport);
-window.addEventListener('load', checkViewport);
