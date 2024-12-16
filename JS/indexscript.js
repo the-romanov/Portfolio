@@ -14,24 +14,24 @@ $(document).ready(function() {
             $(`.carousel-track`).removeClass('trans');
         } else if (counter === 1) {
             counter = 8;
-            $(`#item7, #item8`).css({ visibility: 'visible' });
+            $(`#item7, #item8`).css({ display: 'block' });
             $(`#item8img`).addClass('trans');
             $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vw" });
             $(`#item8img`).css({width: "20vw"});
-            $(`#item9, #item6`).css({ visibility: 'visible' });
+            $(`#item9, #item6`).css({ display: 'block' });
             $(`#item1img`).addClass('trans');
             $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vw"});
             $(`#item1img`).css({width: "15vw"});
             $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-57.65%)' });
-            $(`#item0, #item1, #item2`).css({ visibility: 'hidden' });
+            $(`#item0, #item1, #item2`).css({ display: 'none' });
         }
 
         var push = (((counter - 6) * -17.722) - 28.50714258714); //(((counter - 6) * -9.714285714) - 28.50714258714)
         $(`#item${counter}`).css({ width: "15vw", height: "50vw" }, 200);
         $(`#item${counter}img`).stop(true, true).animate({width: "15vw"}, 1000);
         $(`#item${counter - 1}`).css({ width: "20vw", height: "68vw" }, 200);
-        $(`#item${counter -1}img`).stop(true, true).animate({width: "20vw"}, 1000);
-        $(`#item${counter - 2}`).css({ visibility: 'visible' });
+        $(`#item${counter - 1}img`).stop(true, true).animate({width: "20vw"}, 1000);
+        $(`#item${counter - 2}`).css({ display: 'block' });
         $(`.carousel-track`).css({ transform: `translateX(${push}%)` });
         $(`.carousel-track`).removeClass('trans');
         $('#item1, #item1img, #item8, #item8img').removeClass('trans');
@@ -39,19 +39,19 @@ $(document).ready(function() {
         setTimeout(function() {
             $(left).prop('disabled', false);
             $(right).prop('disabled', false);
-            $(`#item${counter + 1}`).css({ visibility: 'hidden' });
+            $(`#item${counter + 1}`).css({ display: 'none' });
             counter--;
 
             if (counter < 2) {
                 counter = 8;
-                $(`#item7, #item8`).css({ visibility: 'visible' });
+                $(`#item7, #item8`).css({ display: 'block' });
                 $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vw"});
                 $(`#item8img`).css({width: "20vw"});
-                $(`#item9`).css({ visibility: 'visible' });
+                $(`#item9`).css({ display: 'block' });
                 $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vw"});
                 $(`#item1img`).css({width: "15vw"});
                 $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(-81.9%)' });
-                $(`#item0, #item1, #item2`).css({ visibility: 'hidden' });
+                $(`#item0, #item1, #item2`).css({ display: 'none' });
             }
         }, 1000);
     });
@@ -66,16 +66,16 @@ $(document).ready(function() {
             $(`.carousel-track`).removeClass('trans');
         } else if (counter === 8) {
             counter = 1;
-            $(`#item0, #item1`).css({ visibility: 'visible'});
+            $(`#item0, #item1`).css({ display: 'block'});
             $(`#item1img`).addClass('trans');
             $(`#item1`).addClass('trans').css({ width: "20vw", height: "68vw"});
             $(`#item1img`).css({width: "20vw"});
-            $(`#item2`).css({ visibility: 'visible' });
+            $(`#item2`).css({ display: 'block' });
             $(`#item8img`).addClass('trans')
             $(`#item8`).css({width: "15vw", height: "68vw"});
             $(`#item8img`).css({width: "15vw"});
             $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(10.35%)' });
-            $(`#item7, #item8, #item9`).css({ visibility: 'hidden' });
+            $(`#item7, #item8, #item9`).css({ display: 'none' });
         }
 
         var push = (((counter - 4) * -17.722) - 28.50714258714);
@@ -83,27 +83,27 @@ $(document).ready(function() {
         $(`#item${counter}img`).stop(true, true).animate({width: "15vw"}, 1000);
         $(`#item${counter + 1}`).css({ width: "20vw", height: "68vw" }, 200);
         $(`#item${counter + 1}img`).stop(true, true).animate({width: "20vw"}, 1000);
-        $(`#item${counter + 2}`).css({ visibility: 'visible' });
+        $(`#item${counter + 2}`).css({ display: 'block' });
         $(`.carousel-track`).css({ transform: `translateX(${push}%)` });
         $(`.carousel-track`).removeClass('trans');
-        $('#item1').removeClass('trans');
-        $('#item8').removeClass('trans');
+        $('#item1, #item1img, #item8, #item8img').removeClass('trans');
 
         setTimeout(function() {
             $(left).prop('disabled', false);
             $(right).prop('disabled', false);
-            $(`#item${counter - 1}`).css({ visibility: 'hidden' });
+            $(`#item${counter - 1}`).css({ display: 'none' });
             counter++;
+            
             if (counter > 7) {
                 counter = 1;
-                $(`#item0, #item1`).css({ visibility: 'visible' });
+                $(`#item0, #item1`).css({ display: 'block' });
                 $('#item1').addClass('trans').css({ width: "20vw", height: "68vw"});
                 $(`#item1img`).css({width: "20vw"});
-                $(`#item2`).css({ visibility: 'visible' });
+                $(`#item2`).css({ display: 'block' });
                 $(`#item8img`).css({ width: "15vw"});
                 $(`#item9img`).css({ width: "15vw"});
                 $(`.carousel-track`).addClass('trans').css({ transform: 'translateX(42.57%)' });
-                $(`#item7, #item8, #item9`).css({ visibility: 'hidden' });
+                $(`#item7, #item8, #item9`).css({ display: 'none' });
             }
         }, 1000);
     });
