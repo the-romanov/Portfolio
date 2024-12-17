@@ -1,4 +1,149 @@
-// REDO BELOW
+$(document).ready(function() {
+    var counter = 5;
+    var push = 49.5;
+    var left = $('#larrow');
+    var right = $('#rarrow');
+    var notransfer = false;
+
+    $(right).click(function() {
+        $(left).prop('disabled', true);
+        $(right).prop('disabled', true);
+
+        if (counter === 8) {
+            $(`#item8`).removeClass('trans');
+            $(`#item1`).removeClass('trans');
+            $(`#carousel-track`).removeClass('trans');
+        } else if (counter === 1) {
+            counter = 8;
+            notransfer = true;
+            $(`#item7, #item8, #item9`).css({ display: 'block' });
+            $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vw" });
+            $(`#item8img`).addClass('trans').css({width: "20vw"});
+            $(`#item9, #item6`).css({ display: 'block' });
+            $(`#item1img`).addClass('trans');
+            $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vw"});
+            $(`#item1img`).css({width: "15vw"});
+            $(`#carousel-track`).addClass('trans').css({ transform: 'translateX(49.5vw)' });
+            $(`#item0, #item1, #item2`).css({ display: 'none' });
+        }
+
+        $(`#carousel-track`).addClass('trans');
+        if(notransfer == false) {
+        $(`#carousel-track`).css({ transform: `translateX(${push-8.5}vw)` });
+        }
+        $(`#item${counter - 2}`).css({ display: 'block' });
+        $(`#item${counter}`).css({ width: "15vw", height: "50vw" }, 200);
+        $(`#item${counter}img`).stop(true, true).animate({width: "15vw"}, 1000);
+        $(`#item${counter - 1}`).css({ width: "20vw", height: "68vw" }, 200);
+        $(`#item${counter - 1}img`).stop(true, true).animate({width: "20vw"}, 1000);
+        $(`#carousel-track`).removeClass('trans');
+        $(`#carousel-track`).css({transform: 'translateX(58vw)'}, 1000);
+        $(`#item8img, #item1img`).css({width: "15vw"});
+
+        setTimeout(function() {
+            notransfer = false;
+            $(left).prop('disabled', false);
+            $(right).prop('disabled', false);
+            $(`#item${counter + 1}`).css({ display: 'none' });
+            $(`#carousel-track`).addClass('trans');
+            $(`#carousel-track`).css({ transform: `translateX(49.5vw)` });
+            counter--;
+
+            if (counter < 2) {
+                counter = 8;
+                $(`#item7, #item8, #item9`).css({ display: 'block' });
+                $(`#item8`).addClass('trans').css({ width: "20vw", height: "68vw"});
+                $(`#item8img`).css({width: "20vw"});
+                $(`#item1`).addClass('trans').css({ width: "15vw", height: "50vw"});
+                $(`#item1img`).css({width: "15vw"});
+                $(`#carousel-track`).addClass('trans').css({ transform: 'translateX(49.5vw)' });
+                $(`#item0, #item1, #item2`).css({ display: 'none' });
+            }
+        }, 1000);
+    });
+
+    $(left).click(function() {
+        $(left).prop('disabled', true);
+        $(right).prop('disabled', true);
+
+        if (counter === 1) {
+            $(`#carousel-track`).addClass('trans');
+            $('#item8').removeClass('trans');
+            $(`#item8`).css({ width: "15vw", height: "50vw" });
+            $(`#item8img`).css({width: "15vw"});
+            $('#item1').removeClass('trans');
+            $(`#item1`).css({ width: "20vw", height: "68vw" });
+            $(`#item1img`).css({width: "20vw"});
+            $(`#carousel-track`).removeClass('trans');
+
+        } else if (counter === 8) {
+            counter = 1;
+            notransfer = true;
+            $(`#item1`).css({ width: "20vw", height: "68vw"});
+            $(`#item1img`).css({width: "20vw"});
+            $(`#item0, #item1, #item2`).css({ display: 'block'});
+            $(`#item7, #item8, #item9`).css({ display: 'none' });
+            /*$(`#carousel-track`).addClass('trans').css({ transform: 'translateX(49.5vw)' });
+            //$(`#item1img`).addClass('trans');
+            $(`#item1`).css({ width: "20vw", height: "68vw"});
+            $(`#item1img`).css({width: "20vw"});
+            $(`#item2`).css({ display: 'block' });
+            $(`#item8img`).addClass('trans')
+            $(`#item8`).css({width: "15vw", height: "68vw"});
+            $(`#item8img`).css({width: "15vw"});
+            $(`#carousel-track`).addClass('trans').css({ transform: 'translateX(49.5vw)' });
+            $(`#item7, #item8, #item9`).css({ display: 'none' });
+
+            /*
+        $(`#carousel-track`).addClass('trans');
+        $(`#carousel-track`).css({ transform: `translateX(${push+8.5}vw)` });
+        $(`#item${counter + 2}`).css({ display: 'block' });
+        $(`#item${counter}`).css({ width: "15vw", height: "50vw" }, 200);
+        $(`#item${counter}img`).stop(true, true).animate({width: "15vw"}, 1000);
+        $(`#item${counter + 1}`).css({ width: "20vw", height: "68vw" }, 200);
+        $(`#item${counter + 1}img`).stop(true, true).animate({width: "20vw"}, 1000);
+        $(`#carousel-track`).removeClass('trans');
+        $(`#carousel-track`).css({transform: 'translateX(41vw)'}, 1000);
+*/
+
+
+        }
+
+        $(`#carousel-track`).addClass('trans');
+        if(notransfer == false) {
+        $(`#carousel-track`).css({ transform: `translateX(${push+8.5}vw)` });
+        }
+        $(`#item${counter + 2}`).css({ display: 'block' });
+        $(`#item${counter}`).css({ width: "15vw", height: "50vw" }, 200);
+        $(`#item${counter}img`).stop(true, true).animate({width: "15vw"}, 1000);
+        $(`#item${counter + 1}`).css({ width: "20vw", height: "68vw" }, 200);
+        $(`#item${counter + 1}img`).stop(true, true).animate({width: "20vw"}, 1000);
+        $(`#carousel-track`).removeClass('trans');
+        $(`#carousel-track`).css({transform: 'translateX(41vw)'}, 1000);
+
+        setTimeout(function() {
+            notransfer = false;
+            $(left).prop('disabled', false);
+            $(right).prop('disabled', false);
+            $(`#item${counter - 1}`).css({ display: 'none' });
+            $(`#carousel-track`).addClass('trans');
+            $(`#carousel-track`).css({ transform: `translateX(49.5vw)`});
+            $(`#item8img, #item1img`).css({width: "15vw"});
+            counter++;
+            
+            if (counter > 7) {
+                counter = 1;
+                $('#item8').addClass('trans').css({ width: "15vw", height: "50vw"});
+                $(`#item8img`).css({width: "15vw"});
+                $(`#item0, #item1, #item2`).css({ display: 'block' });
+                $(`#item7, #item8, #item9`).css({ display: 'none' });
+                $('#item1').addClass('trans').css({ width: "20vw", height: "68vw"});
+                $(`#item1img`).css({width: "20vw"});
+            }
+        }, 1000);
+    });
+})
+/*
 $(document).ready(function() {
     var counter = 5;
     var left = $('#larrow');
@@ -107,7 +252,7 @@ $(document).ready(function() {
             }
         }, 1000);
     });
-});
+})*/
 function gitHub() {
     location.assign("https://github.com/the-romanov/");
 }

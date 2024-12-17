@@ -138,7 +138,7 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
                 <button id="item6" class="carousel-item buttons" style="width: 15vw; height: 50vw;" onclick="pitchingaproduct()"><img id="item6img" style="width:15vw;  z-index: 2; position: relative;" src="./Showcase/PitchShowcase.png"></button>
                 <button id="item7" class="carousel-item buttons" style="display: none; width: 15vw; height: 50vw;" onclick="amnesic()"><img id="item7img" style="width:15vw;  z-index: 2; position: relative;" src="./Showcase/ACShowcase.png"></button>
                 -->
-            <div style="display: flex; justify-content: center; transform: translateX(49.5vw); z-index: 2; width: 1vw;" class="carousel-track"> <!---28.50714258714%-->
+            <div style="display: flex; justify-content: center; transform: translateX(49.5vw); z-index: 2; width: 1vw;" id="carousel-track"> <!---28.50714258714%-->
                 <button id="item0" class="carousel-item buttons" style="display: none; width: 15vw; height: 50vw;" onclick="amnesic()"><img id="item0img" style="width:15vw;  z-index: 2; position: relative;" src="./Showcase/ACShowcase.png"></button>
                 <button id="item1" class="carousel-item buttons" style="display: none; width: 15vw; height: 50vw;" onclick=""><img id="item1img" style="width:15vw;  z-index: 2; position: relative;" src="./Showcase/HiddenShowcase.png"></button>
                 <button id="item2" class="carousel-item buttons" style="display: none; width: 15vw; height: 50vw;" onclick="websitedevelopment()"><img id="item2img" style="width:15vw;  z-index: 2; position: relative;" src="./Showcase/WebShowcase.png"></button>
@@ -168,9 +168,9 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
         position: static;
         top: 0%;
     }
-    .carousel-track {
-        transition: transform 0.5s ease;
+    #carousel-track {
         align-items: center;
+        transition: transform 0.5s, width 0.5s, height 0.5s;
     }
     .carousel {
         overflow: hidden;
