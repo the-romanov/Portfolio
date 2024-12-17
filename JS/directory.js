@@ -1,18 +1,18 @@
 function websitedevelopment() {
-    location.assign("website-development.html");
+    location.assign("./Coursework/website-development.html");
 }
 function animation() {
-    location.assign("animation.html");
+    location.assign("./Coursework/animation.html");
 }
 function modelling() {
-    location.assign("3d-modelling.html");
+    location.assign("./Coursework/3d-modelling.html");
 }
 function gamedevelopment() {
-    location.assign("game-development");
+    location.assign("./Coursework/game-development");
 }
 function pitchingaproduct() {
-    location.assign("pitching-a-product.html");
+    location.assign("./Coursework/pitching-a-product.html");
 }
 function amnesic() {
-    location.assign("amnesicchat");
+    location.assign("./experiences/amnesicchat.html");
 }
