@@ -1,55 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>{ Roman Osborne - Personal Profile }</title>
-        <script src="./JS/jquery-3.7.1.min.js"></script>
-        <script src="./JS/footerheaderscript.js"></script>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <title>{ Roman Osborne - 3D Modeling }</title>
+        <script src="./../JS/jquery-3.7.1.min.js"></script>
+        <script src="./../JS/indexscript.js"></script>
+        <link rel="stylesheet" href="./../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
     <body class="gray" style="height: 300vh">
-        <!--PAGE START-->
-        <div id="front" style="position: fixed;">
-            <!--LEFT SIDE START-->
-            <!--BRIEF ABOUT ME START-->
-            <div id="ct" style="position: absolute; transform: translate(25vw, 5vh);">
-            <h1 style="font-family: expletus-sans; color: white; font-size: 3vw; text-align: center;">CAMBRIDGE TECHNICALS<br>DIGITAL MEDIA COURSEWORK</h1>
-            <div style="display: flex; align-items: center; transform: translate(-2%, -30%);">
-                <img style="width: 2%; padding: 1%" src="./Dot.png">
-                <img style="width: 49vw; height: .5vw;" src="./Line.png">
+        <div id="main" style="position: absolute; transform: translate(-1.5vw, 3vh); width: 99vw; margin: 2vw;">
+            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(0vw); font-size: 3vw; text-align: center;">3D MODELING</h1>
+            <div style="display: flex; align-items: center; transform: translate(29.5vw, -2vw); width: 40vw;">
+                <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
+                <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
             </div>
-            <h1 style="font-family: expletus-sans; color: white; transform: translatey(50%); font-size: 2vw; text-align: center;">Here I will be showcasing some projects I have undertaken as part of my coursework.</h1>
-            <div style="transform: translate(-20vw, 30%);">
-            <div id="u12">
-            <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">GAME DEVELOPMENT</h1>
-            <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                <img style="width: 2%; padding: 1%" src="./Dot.png">
-                <img style="width: 33vw; height: .5vw;" src="./Line.png">
+            <h1 id ="about" style="font-family: expletus-sans; color: white; transform: translatey(-50%); font-size: 1.9vw; text-align: center;">
+                This page showcases my experience in 3D modeling, detailing the steps I follow to create stunning 3D assets from concept to completion.
+            </h1>
+            <img style="width: 50vw; transform: translateX(25vw); height: .5vw;" src="./../Common/Line.png">
+            <!-- Introduction -->
+            <div style="transform: translateY(2vw);">
+                <!-- Idea Thoughts -->
+                <section>
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4vw; text-align: center;">Introduction</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: center; text-align: justify; margin: 2vw;">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; flex: 1;">
+                            My journey in 3D modeling began with a fascination for digital art and design. I was captivated by the ability to create realistic and fantastical worlds from scratch using 3D software.<br><br> 
+                            Over the years, I honed my skills in tools like Blender, Autodesk Maya, and ZBrush to create everything from detailed models to fully animated scenes.<br><br>
+                            3D modeling is both an art and a science. It requires creativity, technical skill, and a deep understanding of geometry and texturing techniques to bring an object to life in the digital world.
+                        </p>
+                        <img class="sectionimage" style="width: 40vw; height: auto; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/ModelOverview.png">
+                    </div>
+                </section>
+                <img class="sectionimage" style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+                <!-- Step 1: Conceptualization -->
+                <section>
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 1: Conceptualization</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 2vw;">
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/SketchIcon.png">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; flex: 1; margin: 2vw;">
+                            The first step in 3D modeling is conceptualization. This phase involves gathering reference images, sketches, and inspirations to understand the form and details of the object you want to create.<br><br> 
+                            I usually start by sketching the object or character from multiple angles to get a better understanding of the proportions and the design.<br><br> 
+                            Having a clear idea of the final result helps in the modeling process, as it ensures the shapes and proportions stay consistent throughout.
+                        </p>
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/ConceptArt.png">
+                    </div>
+                </section>
+                <img style="width: 50vw; transform: translate(25vw, -2vw); height: .5vw;" src="./../Common/Line.png">
+                <!-- Step 2: Modeling -->
+                <section>
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 2: Modeling</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin: 2vw;">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; flex: 1; margin: 2vw;">
+                            The modeling phase is where the object takes shape. I begin by creating a base mesh using polygonal modeling techniques. The goal here is to define the overall form of the object or character.<br><br> 
+                            Once the base model is established, I refine the shape by adding more detail and subdividing the mesh to make it smoother.<br><br> 
+                            Depending on the complexity, I use sculpting tools like ZBrush for finer details such as wrinkles, pores, or texture. This allows me to create highly detailed and organic models with a high level of realism.
+                        </p>
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 2vw;">
+                            <!-- Images stacked vertically -->
+                            <img class="sectionimage" style="width: 40vw; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/ModelingProcess.png">
+                            <img class="sectionimage" style="width: 40vw; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/3DModelExample.png">
+                        </div>
+                    </div>
+                </section>
+                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+
+                <!-- Step 3: Texturing -->
+                <section>
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 3: Texturing</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 2vw;">
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/TextureIcon.png">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw; flex: 1;">
+                            After the model is created, the next step is texturing. This is where I add realistic surface details like colors, bumps, and reflections to the model.<br><br> 
+                            I use UV unwrapping techniques to map 2D textures onto the 3D model. This process ensures that the textures wrap seamlessly around the object without distortion.<br><br> 
+                            I apply different materials, such as metal, wood, or fabric, to make the model look realistic, often using tools like Substance Painter or Mari for advanced texturing.
+                        </p>
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/TexturedModel.png">
+                    </div>
+                </section>
+                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+
+                <!-- Step 4: Rendering -->
+                <section>
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 4: Rendering</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 2vw;">
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/RenderIcon.png">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw; flex: 1;">
+                            Rendering is the final step in the 3D modeling process. In this phase, I generate high-quality images or animations from the 3D scene.<br><br> 
+                            I set up the lighting, camera angles, and environment to make the model look its best. Various rendering engines, like Arnold or Blender’s Cycles, are used to produce photorealistic images.<br><br> 
+                            Post-processing effects, such as adding shadows, reflections, and adjusting the colors, are also applied in this step to enhance the final render.
+                        </p>
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../3DModeling/RenderExample.png">
+                    </div>
+                </section>
+                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+                <!-- Conclusion -->
+                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: 2vw">
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Conclusion</h2>
+                    <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw;">
+                        3D modeling is an intricate process that combines artistic creativity with technical knowledge. It requires patience, attention to detail, and a passion for creating stunning visuals.<br><br>
+                        From conceptualization to the final render, I strive to create realistic, detailed, and engaging 3D models that bring ideas to life in the digital world.
+                    </p>
+                </section>
             </div>
-            <div id="u23">
-            <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">WEBSITE DEVELOPMENT</h1>
-            <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                <img style="width: 2%; padding: 1%" src="./Dot.png">
-                <img style="width: 37vw; height: .5vw;" src="./Line.png">
-            </div>
-            <div id="u11">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">3D MODELLING & DESIGN</h1>
-                <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 38vw; height: .5vw;" src="./Line.png">
-                </div>
-            <div id="u10">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">ANIMATION</h1>
-                <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 19vw; height: .5vw;" src="./Line.png">
-                </div>
-            <div id="u21">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">PITCHING A PRODUCT</h1>
-                <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 33vw; height: .5vw;" src="./Line.png">
-                </div>
         </div>
-        </div>
+    </body>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            margin-bottom: 5vw;
+        }
+        section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2vw;
+        }
+        @media screen and (max-width: 768px) {
+            .sectiontext {
+                font-size: 20vw;    
+            }
+            img, video {
+                width: 90vw;
+                height: auto;
+                margin-top: 4vw;
+            }
+            section div {
+                flex-direction: column;
+                align-items: center;
+            }
+            img[src*="Line.png"] {
+                width: 90vw;
+            }
+        }
+
+        /* Additional Media Queries for Very Small Screens */
+        @media screen and (max-width: 480px) {
+            section {
+                margin-bottom: 8vw;
+            }
+        }
+    </style>
 </html>

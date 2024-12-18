@@ -1,55 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>{ Roman Osborne - Personal Profile }</title>
-        <script src="./JS/jquery-3.7.1.min.js"></script>
-        <script src="./JS/footerheaderscript.js"></script>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <title>{ Roman Osborne - Website Development }</title>
+        <script src="./../JS/jquery-3.7.1.min.js"></script>
+        <script src="./../JS/indexscript.js"></script>
+        <link rel="stylesheet" href="./../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
     <body class="gray" style="height: 300vh">
-        <!--PAGE START-->
-        <div id="front" style="position: fixed;">
-            <!--LEFT SIDE START-->
-            <!--BRIEF ABOUT ME START-->
-            <div id="ct" style="position: absolute; transform: translate(25vw, 5vh);">
-            <h1 style="font-family: expletus-sans; color: white; font-size: 3vw; text-align: center;">CAMBRIDGE TECHNICALS<br>DIGITAL MEDIA COURSEWORK</h1>
-            <div style="display: flex; align-items: center; transform: translate(-2%, -30%);">
-                <img style="width: 2%; padding: 1%" src="./Dot.png">
-                <img style="width: 49vw; height: .5vw;" src="./Line.png">
+        <div id="main" style="position: absolute; transform: translate(-1.5vw, 3vh); width: 99vw; margin: 2vw;">
+            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(0vw); font-size: 3vw; text-align: center;">WEBSITE DEVELOPMENT</h1>
+            <div style="display: flex; align-items: center; transform: translate(29.5vw, -2vw); width: 40vw;">
+                <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
+                <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
             </div>
-            <h1 style="font-family: expletus-sans; color: white; transform: translatey(50%); font-size: 2vw; text-align: center;">Here I will be showcasing some projects I have undertaken as part of my coursework.</h1>
-            <div style="transform: translate(-20vw, 30%);">
-            <div id="u12">
-            <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">GAME DEVELOPMENT</h1>
-            <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                <img style="width: 2%; padding: 1%" src="./Dot.png">
-                <img style="width: 33vw; height: .5vw;" src="./Line.png">
+            <h1 id ="about" style="font-family: expletus-sans; color: white; transform: translatey(-50%); font-size: 1.9vw; text-align: center;">
+                This page will include my experience in developing websites and a detailed overview of my path to website creation.
+            </h1>
+            <img style="width: 50vw; transform: translateX(25vw); height: .5vw;" src="./../Common/Line.png">
+            <!-- Introduction -->
+            <div style="transform: translateY(2vw);">
+                <!-- Idea Thoughts -->
+                <section>
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4vw; text-align: center;">Introduction</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: center; text-align: justify; margin: 2vw;">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; flex: 1;">
+                            My journey into website development began with a passion for creating digital experiences.<br><br> I always wanted to design user-friendly websites that are both functional and aesthetically pleasing. 
+                            As a child, I was fascinated by how websites were structured and the potential to interact with users.<br><br> This fascination led me to learn HTML, CSS, JavaScript, and eventually delve into frameworks like React and Vue.js. 
+                            Over time, I built a strong foundation in responsive design, front-end frameworks, and backend integration, which are crucial for developing dynamic and interactive websites.
+                        </p>
+                        <img class="sectionimage" style="width: 40vw; height: auto; border-radius: 15px; border: 3px solid white;" src="./../WebsiteDevelopment/FullWebsite.png">
+                    </div>
+                </section>
+                <img class="sectionimage" style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+                <!-- Step 1: Planning & Wireframing -->
+                <section>
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 1: Planning & Wireframing</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 2vw;">
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../WebsiteDevelopment/PlanIcon.png">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; flex: 1; margin: 2vw;">
+                            The first step in creating a website is careful planning. This phase includes understanding the client’s requirements, setting goals for the site, and identifying the target audience.<br><br> 
+                            I begin by sketching wireframes to define the layout and structure of the site. Wireframing allows me to visualize the flow of the website and determine the placement of key elements like navigation, content, and multimedia.<br><br> 
+                            I use tools like Figma and Adobe XD to create interactive prototypes that help visualize how users will navigate the site before development begins.
+                        </p>
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../WebsiteDevelopment/Wireframe.png">
+                    </div>
+                </section>
+                <img style="width: 50vw; transform: translate(25vw, -2vw); height: .5vw;" src="./../Common/Line.png">
+                <!-- Step 2: Development & Coding -->
+                <section>
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 2: Development & Coding</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin: 2vw;">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; flex: 1; margin: 2vw;">
+                            After the planning phase, I move on to actual development and coding. Using HTML, CSS, and JavaScript, I start building the structure of the site.<br><br> 
+                            I focus on ensuring that the website is responsive, meaning it adapts well to all screen sizes—from desktop to mobile. I often use frameworks like Bootstrap or Tailwind CSS to streamline the design and make the site look polished.<br><br> 
+                            JavaScript is used for adding interactivity, such as smooth scrolling, pop-ups, and dynamic content. I also use various APIs to integrate functionalities like contact forms, social media feeds, and payment gateways.
+                        </p>
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 2vw;">
+                            <!-- Images stacked vertically -->
+                            <img class="sectionimage" style="width: 40vw; border-radius: 15px; border: 3px solid white;" src="./../WebsiteDevelopment/CodeSnippet.png">
+                            <img class="sectionimage" style="width: 40vw; border-radius: 15px; border: 3px solid white;" src="./../WebsiteDevelopment/Responsive.png">
+                        </div>
+                    </div>
+                </section>
+                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+
+                <!-- Step 3: Testing & Optimization -->
+                <section style="display: flex; flex-direction: column; align-items: center; margin: 2vw;">
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">
+                        Step 3: Testing & Optimization
+                    </h2>
+                    <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: 2vw;">
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../WebsiteDevelopment/Testing.png">
+                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw; flex: 1;">
+                            Once the website is developed, I conduct thorough testing to ensure everything works as expected. I test across multiple devices and browsers to check for compatibility issues.<br><br> 
+                            Performance optimization is key—this includes compressing images, minifying CSS and JavaScript, and implementing caching strategies to improve loading times.<br><br> 
+                            Additionally, I perform usability testing to ensure that the site is easy to navigate and intuitive for users.
+                        </p>
+                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../WebsiteDevelopment/Optimization.png">
+                    </div>
+                </section>
+                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+                <!-- Step 4: Launch & Maintenance -->
+                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: 2vw">
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">
+                        Step 4: Launch & Maintenance
+                    </h2>
+                    <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw; width: 80%; max-width: 1200px;">
+                        The final stage of the website development process is launching the site and ensuring it’s fully live.<br><br>
+                        This phase includes migrating the website to a live server, configuring domain settings, and ensuring all analytics and tracking tools are properly set up.<br><br>
+                        After launch, I provide ongoing maintenance, fixing bugs, updating content, and making necessary improvements based on user feedback.
+                    </p>
+                </section>
+                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+                <!-- Ending -->
+                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: 2vw">
+                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Conclusion</h2>
+                    <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw;">
+                        Website development is a comprehensive process that requires attention to detail, creativity, and technical expertise.<br><br> 
+                        Throughout this journey, I've learned how to balance functionality and design, optimize performance, and provide a seamless user experience. I look forward to continuing to build interactive websites that deliver value to users.
+                    </p>
+                </section>
             </div>
-            <div id="u23">
-            <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">WEBSITE DEVELOPMENT</h1>
-            <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                <img style="width: 2%; padding: 1%" src="./Dot.png">
-                <img style="width: 37vw; height: .5vw;" src="./Line.png">
-            </div>
-            <div id="u11">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">3D MODELLING & DESIGN</h1>
-                <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 38vw; height: .5vw;" src="./Line.png">
-                </div>
-            <div id="u10">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">ANIMATION</h1>
-                <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 19vw; height: .5vw;" src="./Line.png">
-                </div>
-            <div id="u21">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">PITCHING A PRODUCT</h1>
-                <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
-                    <img style="width: 2%; padding: 1%" src="./Dot.png">
-                    <img style="width: 33vw; height: .5vw;" src="./Line.png">
-                </div>
         </div>
-        </div>
+    </body>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            margin-bottom: 5vw;
+        }
+        section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2vw;
+        }
+        @media screen and (max-width: 768px) {
+            .sectiontext {
+                font-size: 20vw;    
+            }
+            img, video {
+                width: 90vw;
+                height: auto;
+                margin-top: 4vw;
+            }
+            section div {
+                flex-direction: column;
+                align-items: center;
+            }
+            img[src*="Line.png"] {
+                width: 90vw;
+            }
+        }
+
+        /* Additional Media Queries for Very Small Screens */
+        @media screen and (max-width: 480px) {
+            section {
+                margin-bottom: 8vw;
+            }
+        }
+    </style>
 </html>

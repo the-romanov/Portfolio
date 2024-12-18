@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--240 PX WIDTH * 320 PX HEIGHT IS THE LEAST RESOLUTION IT CAN HANDLE
-
-1920 PX WIDHT * 1080 PX WIDTH IS THE MOST RESOLUTION IT CAN HANDLE.
-
-ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
 <html lang="en">
     <head>
     <title>{ Roman Osborne - Coursework }</title>
@@ -12,84 +7,111 @@ ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
     <link rel="stylesheet" href="./../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
-    <body class="gray" style="height: 300vh">
+    <body class="gray">
         <!--PAGE START-->
         <div id="front" style="position: absolute;">
             <!--LEFT SIDE START-->
             <!--BRIEF ABOUT ME START-->
-            <div id="coursework" style="position: absolute; transform: translate(25vw, 4vh);">
-            <h1 style="transform: translateX(-2vw); font-family: expletus-sans; color: white; font-size: 3vw; text-align: center;">CAMBRIDGE TECHNICALS<br>DIGITAL MEDIA COURSEWORK</h1>
-            <div style="display: flex; align-items: center; transform: translate(-2%, -30%);">
+            <div id="coursework" style="position: absolute; transform: translate(2vw, 4vh); width: 96vw; height: 240vw">
+            <h1 style="transform: translateX(22vw); font-family: expletus-sans; color: white; font-size: 3vw; text-align: center; width: 50vw;">CAMBRIDGE TECHNICALS<br>DIGITAL MEDIA COURSEWORK</h1>
+            <div style="display: flex; align-items: center; transform: translate(19vw, -3vw); width: 60vw;">
                 <img style="width: 2%; padding: 1%" src="./../Common/Dot.png">
                 <img style="width: 49vw; height: .5vw;" src="./../Common/Line.png">
             </div>
             <h1 style="font-family: expletus-sans; color: white; transform: translateX(-3vw); font-size: 2vw; text-align: center;">Here I will be showcasing some projects I have undertaken as part of my coursework.</h1>
-            <div style="transform: translate(-20vw, 2vw);">
+            <div style="transform: translate(4vw, 2vw); width: 78vw; height: 220vw">
             <div id="game">
-            <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">GAME DEVELOPMENT</h1>
-            <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
+            <h1 class="cardtitle">GAME DEVELOPMENT</h1>
+            <div style="display: flex; align-items: center; transform: translate(-5%, -50%); width:35vw">
                 <img style="width: 2%; padding: 1%" src="./../Common/Dot.png">
                 <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
             </div>
-            <div>
-                <button onclick="gamedevelopment()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowGame.png"></button>
-                <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-27vw, -29vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>game development skills?</h1>
-                <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -25vw); font-size: 1.5vw; text-align: right;">You will be amazed.<br><br>Explore how I single-handedly<br>made a simple FPS game with<br>the most basic mechanics required.</h1>
-                <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -22vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to crafting this<br>game which I have made myself.</h1>
+            <div class="card">
+                <button onclick="gamedevelopment()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowGame.png"></button>
+                <h1 class="first detail">Are you interested in my<br>game development skills?</h1>
+                <h1 class="second detail">You will be amazed.<br><br>Explore how I single-handedly<br>made a simple FPS game with<br>the most basic mechanics required.</h1>
+                <h1 class="third detail" >Click this module to discover<br>my progress in to crafting this<br>game which I have made myself.</h1>
                 </div>
             </div>
-            <div id="website" style="transform: translateY(-17vw);">
-            <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">WEBSITE DEVELOPMENT</h1>
-            <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
+            <div id="website">
+            <h1 class="cardtitle">WEBSITE DEVELOPMENT</h1>
+            <div style="display: flex; align-items: center; transform: translate(-5vw, -4vw);">
                 <img style="width: 2%; padding: 1%" src="./../Common/Dot.png">
                 <img style="width: 37vw; height: .5vw;" src="./../Common/Line.png">
             </div>
-            <div>
-                <button onclick="websitedevelopment()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowWeb.png"></button>
-                <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-27vw, -29vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>web development skills?</h1>
-                <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -25vw); font-size: 1.5vw; text-align: right;">You are totally in luck!<br><br>Explore the process from<br>start to finish with all<br>sorts of planning and ideas.</h1>
-                <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -22vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to crafting this<br>masterpiece on the left of this text.</h1>
+            <div class="card">
+                <button onclick="websitedevelopment()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowWeb.png"></button>
+                <h1 class="first detail">Are you interested in my<br>web development skills?</h1>
+                <h1 class="second detail">You are totally in luck!<br><br>Explore the process from<br>start to finish with all<br>sorts of planning and ideas.</h1>
+                <h1 class="third detail">Click this module to discover<br>my progress in to crafting this<br>masterpiece on the left of this text.</h1>
             </div>
             </div>
-            <div id="modelling" style="transform: translateY(-34vw);">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">3D MODELLING & DESIGN</h1>
+            <div id="modelling">
+                <h1 class="cardtitle">3D MODELLING & DESIGN</h1>
                 <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
                 <img style="width: 2%; padding: 1%" src="./../Common/Dot.png">
                 <img style="width: 38vw; height: .5vw;" src="./../Common/Line.png">
                 </div>
-                <div>
-                    <button onclick="modelling()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowModelling.png"></button>
-                    <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-27vw, -29vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>web development skills?</h1>
-                    <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -25vw); font-size: 1.5vw; text-align: right;">You are totally in luck!<br><br>Explore the process from<br>start to finish with all<br>sorts of planning and ideas.</h1>
-                    <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -22vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to crafting this<br>masterpiece on the left of this text.</h1>
+                <div class="card">
+                    <button onclick="modelling()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowModelling.png"></button>
+                    <h1 class="first detail">Are you interested in my<br>web development skills?</h1>
+                    <h1 class="second detail">You are totally in luck!<br><br>Explore the process from<br>start to finish with all<br>sorts of planning and ideas.</h1>
+                    <h1 class="third detail">Click this module to discover<br>my progress in to crafting this<br>masterpiece on the left of this text.</h1>
                 </div>    
             </div>
-            <div id="animation" style="transform: translateY(-51vw);">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">ANIMATION</h1>
+            <div id="animation">
+                <h1 class="cardtitle">ANIMATION</h1>
                 <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
                 <img style="width: 2%; padding: 1%" src="./../Common/Dot.png">
                 <img style="width: 19vw; height: .5vw;" src="./../Common/Line.png">
                 </div>
-                <div>
-            <button onclick="animation()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw; position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowAnimation.png"></button>
-                <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-27vw, -29vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>animation skills?</h1>
-                <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -25vw); font-size: 1.5vw; text-align: right;">You may find<br>my viewpoint interesting.<br><br>Explore the process from<br>start to finish!</h1>
-                <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -22vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to animting this<br>short film on the left of this text.</h1>
+                <div class="card">
+            <button onclick="animation()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw; position: relative; z-index: 2;"><img style="width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowAnimation.png"></button>
+                <h1 class="first detail">Are you interested in my<br>animation skills?</h1>
+                <h1 class="second detail">You may find<br>my viewpoint interesting.<br><br>Explore the process from<br>start to finish!</h1>
+                <h1 class="third detail">Click this module to discover<br>my progress in to animting this<br>short film on the left of this text.</h1>
                 </div>
             </div>
-            <div id="pitching" style="transform: translateY(-68vw);">
-                <h1 style="font-family: expletus-sans-bold; color: white; font-size: 3vw;">PITCHING A PRODUCT</h1>
+            <div id="pitching">
+                <h1 class="cardtitle">PITCHING A PRODUCT</h1>
                 <div style="display: flex; align-items: center; transform: translate(-5%, -50%);">
                 <img style="width: 2%; padding: 1%" src="./../Common/Dot.png">
                 <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
                 </div>
-            <div>
-                <button onclick="pitchingaproduct()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="transform: translate(-0.29vw, -0vh); width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowPitch.png"></button>
-                <h1 style="font-family: expletus-sans-bold; color: white; transform: translate(-27vw, -29vw); font-size: 1.5vw; text-align: right;">Are you interested in my<br>pitch & speaking skills?</h1>
-                <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -25vw); font-size: 1.5vw; text-align: right;">You will discover<br>my way of selling an idea.<br><br>Explore the path of<br>how I made my idea a reality.</h1>
-                <h1 style="font-family: expletus-sans; color: white; transform: translate(-27vw, -22vw); font-size: 1.5vw; text-align: right;">Click this module to discover<br>my progress in to animting this<br>short film on the left of this text.</h1>
+            <div class="card">
+                <button onclick="pitchingaproduct()" class="buttons" style="border: 3px solid white; transform: translate(-3vw, 0vh); width: 55.4vw; border-radius: 15px; height: 30vw;  position: relative; z-index: 2;"><img style="width: 55vw; border-radius: 15px; height: 100%;" src="./../Coursework/ShadowPitch.png"></button>
+                <h1 class="first detail">Are you interested in my<br>pitch & speaking skills?</h1>
+                <h1 class="second detail">You will discover<br>my way of selling an idea.<br><br>Explore the path of<br>how I made my idea a reality.</h1>
+                <h1 class="third detail">Click this module to discover<br>my progress in to animting this<br>short film on the left of this text.</h1>
             </div>
         </div>
     </div>
     </div>
+    <style>
+        .card{
+            height: 30vw;
+            width: 55vw;
+        }
+        .cardtitle{
+            font-family: expletus-sans-bold; 
+            color: white;
+            font-size: 3vw;
+        }
+        .detail{
+            font-family: expletus-sans; 
+            color: white; 
+            transform: translateX(-4vw); 
+            font-size: 1.5vw; 
+            text-align: right;
+        }
+        .third{
+            transform: translate(-4vw, -22vw);
+        }
+        .second{
+            transform: translate(-4vw, -25vw);
+        }
+        .first{
+            transform: translate(-4vw, -29svw);
+        }
+    </style>
 </html>
