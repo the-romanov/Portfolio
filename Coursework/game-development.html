@@ -10,11 +10,11 @@
     <body class="gray" style="height: 300vh">
         <div id="main" style="position: absolute; transform: translate(-1.5vw, 3vh); width: 99vw; margin: 2vw;">
             <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(29vw); font-size: 3vw; text-align: center; width: 40vw;">GAME DEVELOPMENT</h1>
-            <div style="display: flex; align-items: center; transform: translate(29.5vw, -4vw); width: 40vw;">
-                <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
-                <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
+            <div id="mainline" style="display: flex; align-items: center; transform: translate(29.5vw, -4vw); width: 40vw;">
+                <img id="maindot" style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
+                <img id="mainstripe" style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
             </div>
-            <h1 id ="about" style="font-family: expletus-sans; color: white; transform: translatey(-50%); font-size: 1.9vw; text-align: center;">
+            <h1 id ="about" style="font-family: expletus-sans; color: white; transform: translateX(5vw); font-size: 1.6vw; text-align: center; width: 90vw;">
                 This page will include my experience in developing games and a detailed overview of my path to game creation.
             </h1>
             <img style="width: 50vw; transform: translateX(25vw); height: .5vw;" src="./../Common/Line.png">
@@ -161,6 +161,14 @@ section div {
     #trio {
         transform: translateX(1vw) !important;
     }
+    #about {
+        font-size: 3vw !important;
+        width: 80vw !important;
+        transform: translateX(10vw) !important;
+    }
+    #mainhead {
+        font-size: 4vw !important;
+    }
 }
 
 /* Additional Media Queries for Very Small Screens */
@@ -170,6 +178,23 @@ section div {
     }
     .sectionheader {
         font-size: 12vw !important;    
+    }
+    #mainline {
+        width: 70vw !important;
+        transform: translate(22vw, -6vw) !important;
+    }
+    #about {
+        font-size: 4vw !important;
+    }
+    #mainhead {
+        font-size: 6vw !important;
+    }
+    #maindot {
+        width: 2vw !important;
+    }
+    #mainstripe {
+        width: 50vw !important;
+        height: 1vw !important;
     }
 }
 </style>
