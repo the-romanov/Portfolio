@@ -9,7 +9,7 @@
     </head>
     <body class="gray" style="height: 300vh">
         <div id="main" style="position: absolute; transform: translate(-1.5vw, 3vh); width: 99vw; margin: 2vw;">
-            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(0vw); font-size: 3vw; text-align: center;">3D MODELING</h1>
+            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(0vw); font-size: 3vw; text-align: center; width: 60vw;">3D MODELING</h1>
             <div style="display: flex; align-items: center; transform: translate(29.5vw, -2vw); width: 40vw;">
                 <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
                 <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
@@ -120,7 +120,7 @@
         }
         @media screen and (max-width: 768px) {
             .sectiontext {
-                font-size: 20vw;    
+                font-size: 20vw !important;    
             }
             img, video {
                 width: 90vw;
@@ -131,9 +131,9 @@
                 flex-direction: column;
                 align-items: center;
             }
-            img[src*="Line.png"] {
+            /*img[src*="Line.png"] {
                 width: 90vw;
-            }
+            }*/
         }
 
         /* Additional Media Queries for Very Small Screens */

@@ -9,8 +9,8 @@
     </head>
     <body class="gray" style="height: 300vh">
         <div id="main" style="position: absolute; transform: translate(-1.5vw, 3vh); width: 99vw; margin: 2vw;">
-            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(0vw); font-size: 3vw; text-align: center;">GAME DEVELOPMENT</h1>
-            <div style="display: flex; align-items: center; transform: translate(29.5vw, -2vw); width: 40vw;">
+            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(29vw); font-size: 3vw; text-align: center; width: 40vw;">GAME DEVELOPMENT</h1>
+            <div style="display: flex; align-items: center; transform: translate(29.5vw, -4vw); width: 40vw;">
                 <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
                 <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
             </div>
@@ -33,7 +33,7 @@
                     <img class="sectionimage" style="width: 40vw; height: auto; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/FullUI.png">
                 </div>
             </section>
-            <img class="sectionimage" style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
+            <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
             <!-- Step 1: Prototyping & Core Mechanics -->
             <section>
                 <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 1: Prototyping & Core Mechanics</h2>
@@ -109,13 +109,13 @@
                     and fun.
                 </p>
                 
-                <div style="display: flex; justify-content: space-between; width: 95vw; gap: 2vw;">
-                    <img class="sectionimage" style="width: 30vw; height: 16.875vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/FullUI.png">
-                    <video class="sectionimage" style="width: 30vw; height: 16.875vw; border-radius: 15px; border: 3px solid white;" controls>
+                <div id="trio" style="display: flex; justify-content: space-between; width: 97vw; transform: translateX(-1vw);">
+                    <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/FullUI.png">
+                    <video class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" controls>
                         <source src="./../GameDevelopment/UIExample.mkv" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <video class="sectionimage" style="width: 30vw; height: 16.875vw; border-radius: 15px; border: 3px solid white;" controls>
+                    <video class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" controls>
                         <source src="./../GameDevelopment/UIFunction.mkv" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -150,26 +150,26 @@ section div {
 @media screen and (max-width: 768px) {
 
     .sectiontext {
-        font-size: 20vw;    
+        font-size: 3vw !important;    
     }
-    img, video {
-        width: 90vw;
-        height: auto;
-        margin-top: 4vw;
+    .sectionheader {
+        font-size: 6vw !important;    
     }
-    section div {
-        flex-direction: column;
-        align-items: center;
+    .sectionimage {
+        width: 90vw !important;
     }
-    img[src*="Line.png"] {
-        width: 90vw;
+    #trio {
+        transform: translateX(1vw) !important;
     }
 }
 
 /* Additional Media Queries for Very Small Screens */
 @media screen and (max-width: 480px) {
-    section {
-        margin-bottom: 8vw;
+    .sectiontext {
+        font-size: 4vw !important;    
+    }
+    .sectionheader {
+        font-size: 12vw !important;    
     }
 }
 </style>
