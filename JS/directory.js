@@ -14,5 +14,5 @@ function pitchingaproduct() {
     location.assign("/Coursework/pitching-a-product.html");
 }
 function amnesic() {
-    location.assign("/experiences/amnesicchat.html");
+    location.assign("/Projects/amnesic.html");
 }

@@ -1,191 +1,61 @@
 <!DOCTYPE html>
-<!--240 PX WIDTH * 320 PX HEIGHT IS THE LEAST RESOLUTION IT CAN HANDLE
-
-1920 PX WIDHT * 1080 PX WIDTH IS THE MOST RESOLUTION IT CAN HANDLE.
-
-ANY RESOLUTIONS OUTSIDE OF THE RANGE WILL RESORT IN DISTORTION.-->
 <html lang="en">
     <head>
-    <title>{ Roman Osborne - Personal Profile }</title>
-        <script src="./JS/jquery-3.7.1.min.js"></script>
-        <script src="./JS/footerheaderscript.js"></script>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <title>{ Roman Osborne - AnmnesicChat }</title>
+        <script src="./../JS/jquery-3.7.1.min.js"></script>
+        <script src="./../JS/indexscript.js"></script>
+        <link rel="stylesheet" href="./../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
     <body class="gray" style="height: 300vh">
-        <!--PAGE START-->
-        <div id="front" style="position: fixed;">
-            <!--LEFT SIDE START-->
-        <div style="display: flex; justify-content: space-between;">
-            <img id ="face" src="./FrontFace.png" style="width:46vw; height: 53vw;">
-            <img id ="facecomp" src="./FrontFaceCompressed.png" style="visibility: hidden; width:700px; transform: translate(0vw, 0vw);">
-            <div id="phonefacebody" style="visibility: hidden; position: absolute; height: 50vw; background-color: #0a0a0a; float:left;">
-            <img id ="phoneface" src="./FrontFacePhone.png" style="visibility: hidden; float: left; height: 50vw; width: 100vw;">
+        <div id="main" style="position: absolute; transform: translateX(-1.5vw); width: 99vw; margin: 2vw;">
+            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(0vw); font-size: 5vw; text-align: center;">AmnesicChat</h1>
+            <div style="display: flex; align-items: center; transform: translate(29.5vw, -6vw); width: 40vw;">
+                <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
+                <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
             </div>
-            <!--BRIEF ABOUT ME START-->
-            <div id="aboutme" style="position: absolute; transform: translateX(42vw);">
-            <h1 style="font-family: expletus-sans; color: white; font-size: 5vw; transform: translate(14%, 40%);">ROMAN OSBORNE</h1>
-            <div style="display: flex; align-items: center; transform: translate(7.5%, 40%);">
-                <img style="width: 2%; padding: 1%" src="./Dot.png">
-                <img style="width: 49vw; height: .5vw;" src="./Line.png">
-            </div>
-            <h1 style="font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(18vw, 100%);">Seasoned Programmer</h1>
-            <h1 style="font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(22vw, 200%);">Game Developer</h1>
-            <h1 style="font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(19vw, 300%);">Video & Photo Editor</h1>
-            <h1 style="font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(19vw, 400%);">Digital Media Creator</h1>
-            <div style="display: flex; align-items: center; transform: translate(14vw, 13vw);">
-                <img style="width: 2%; padding: 1%" src="./Dot.png">
-                <img style="width: 30vw; height: .5vw;" src="./Line.png">
-            </div>
-        </div><!--BRIEF ABOUT ME END-->
-        <!--<h1>Current Screen Width: <span id="screen-width">0</span> pixels</h1>-->
-        <h1 id="scrol" style="position: absolute; width: 1300px; font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(45vw, 45vw);">SCROLL OR SWIPE DOWN TO START</h1>
-    <!--TEST START-->
-        <h1 id="test2" style="visibility: hidden;  width: 1300px; font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(-61vw, 46.5vw);">Otherwise you won't see the goods</h1>
-        <h1 id="test3" style="visibility: hidden; width: 1300px; font-family: expletus-sans; color: white; font-size: 2.5vw; transform: translate(61vw, 46.5vw);">Otherwise you won't see the goods</h1>
-        <!--TEST END-->
+            <h1 id ="about" style="font-family: expletus-sans; color: white; transform: translatey(-50%); font-size: 1.9vw; text-align: center;">
+                This project is a work in progress. For the latest updates, visit: <a href="https://github.com/the-romanov/AmnesicChat">https://github.com/the-romanov/AmnesicChat</a>
+            </h1>
+            <img style="width: 50vw; transform: translateX(25vw); height: .5vw;" src="./../Common/Line.png">
         </div>
-        <!--LEFT SIDE END, RIGHT SIDE START--><div style="transform: translate(0vw,-45.3vw);">
-        <!--ANIMATION DIV START-->
-        <div>
-        <img id="vignette" style="position: fixed; z-index: 5; width: 105vw; height: 1110vh; transform: translate(100vw, -14%); background-color: rgba(0,0,0,1);" src="./Vignette.png"> <!--NO -100vh ON DEFAULT 260 VH HEIGHT FOR ALL CASES-->
-        <!--<img id="v2" style="position: fixed; width: 100vw; height: 150vh; transform: translate(100vw, -15vh); opacity: 0.4;" src="./Vignette.png">-->
-        <!--<img style="position: fixed; width: 100vw; height: 100vh; transform: translate(100vw, 85vh); opacity: 0.3;" src="./Gradient.png">-->
-        </div><!--ANIMATION DIV END, TEXT PORTFOLIO START, FULL PORTFOLIO START-->
-        <div style="display: flex; transform: translate(153vw, -13vw);" id="portfolio"><div id="textportfolio">
-        <!--WHO AM I START-->
-        <div id="whoami" style="color:white;">
-        <h1 id="whoamititle" style="width: 100vw; font-family: expletus-sans-bold; font-size: 3vw; transform: translate(-46vw, 11vw); color:white;">WHO AM I?</h1>
-        <div id="whoamidivider" style="display: flex; align-items: center; transform: translate(-49vw, 9vw); width: 100vw;">
-            <img style="width: 1%; padding: 1%" src="./Dot.png">
-            <img id="whoamiline" style="width: 19vw; height: .5vw;" src="./Line.png">
-        </div>
-        <h1 id="whoamidesc" style="width: 100vw; font-family: expletus-sans-bold; font-size: 1vw; transform: translate(-45%, 8vw); color:white;">I am a driven young person who is willing to craft excellence from hard work and from scratch.<br><br>My love for computers which started since I was months old has propelled me to become so<br>intrigued in to the digital world. Computers have become second nature to me.<br><br>Because of technology and how fast it advances, I also advance myself with working hard and<br>driving myself to change the world for better.</h1>
-        </div><!--WHO AM I END, EDUCATION START--><div>
-        <h1 id="edutitle" style="width: 100vw; font-family: expletus-sans-bold; font-size: 3vw; transform: translate(-45vw, 11vw); color:white;">EDUCATION:</h1>
-        <div id="edudivider" style="display: flex; align-items: center; transform: translate(-48vw, 9.5vw); width: 100vw;">
-            <img id="eduball" style="width: .5%; padding: 1%" src="./Dot.png">
-            <img id="eduline" style="width: 20vw; height: .25vw;" src="./Line.png">
-        </div>
-        <!--STUDYING START-->
-        <div>
-        <h1 id="study" style="width: 100vw; font-family: expletus-sans; font-size: 3vw; transform: translate(-44vw, 10.5vw); color:white;">-STUDYING</h1>
-        <h1 id="sec" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(-44%, 11vw); color:white;">- 2018-2023 - Secondary School</h1>
-        <h1 id="six" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(-44%, 11.5vw); color:white;">- 2023-2025 - Sixth Form College <br>[ London Design & Engineering UTC ]</h1>
-        </div><!--STUDYING END, WORK EXPERIENCE START--><div>
-        <h1 id="work" style="width: 100vw; font-family: expletus-sans; font-size: 3vw; transform: translate(-17vw, 1.5vw); color:white;">-WORK<br>EXPERIENCE</h1>
-        <h1 id="skan" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(-17%, 2vw); color:white;">- 27 - 30 June 2022 < Skanska ><br>Design & CAD Tools</Skanska></h1>
-        <h1 id="atpc" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(-17%, 3.5vw); color:white;">- 27 July - 18 August 2024<br>< Atlantic Pacific ><br>Lifeguard @ Royal Albert Dock</h1>
-        </div></div>
-        <!--EDUCATION & WORK EXPERIENCE END, VERTICAL DIVIDER START-->
-        <div id="vd" style="display: flex; align-items: center; transform: translate(7vw, -40vw); width: 100vw;">
-            <img id="vdot" style="width: 1%; padding: 1%" src="./Dot.png">
-            <img id="vline" style="width: 38vw; height: .5vw; transform: rotate(90deg) translate(55%, 20.5vw);" src="./Line.png">
-        </div>
-        <!--VERTICAL DIVIDER END, EXPERIENCE START-->
-        <div>
-        <h1 id="expertitle" style="width: 100vw; font-family: expletus-sans-bold; font-size: 3vw; transform: translate(16vw, -42vw); color:white;">EXPERIENCE:</h1>
-        <div id="experdivider" style="display: flex; align-items: center; transform: translate(12vw, -43vw); width: 100vw;">
-            <img style="width: 1%; padding: 1%" src="./Dot.png">
-            <img id="experline" style="width: 21vw; height: .5vw;" src="./Line.png">
-        </div>
-        <h1 id="program" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(16%, -42vw); color:white;">
-            Programming Languages:<br>5+ Years of Java, C#<br>3+ Years of Python
-            <br>1+ Year of HTML/CSS/JavaScript
-            <br><br>Game Developing:
-            <br>1+ Year of Unity
-            <br>1+ Year of Unreal Engine 5
-            <br>3+ Years of Roblox Studio
-            <br>Employed in Work Experience & Projects
-        </h1>
-        </div>
-        <!--EXPERIENCE END, GRADES START--><div>
-        <h1 id="gradetitle" style="width: 100vw; font-family: expletus-sans-bold; font-size: 3vw; transform: translate(16vw, -39vw); color:white;">GRADES:</h1>
-        <div id="gradedivider" style="display: flex; align-items: center; transform: translate(12vw, -40vw); width: 100vw;">
-            <img style="width: 1%; padding: 1%" src="./Dot.png">
-            <img id="gradeline" style="width: 15vw; height: .5vw;" src="./Line.png">
-        </div>
-        <h1 id="grades" style="width: 100vw; font-family: expletus-sans; font-size: 1.2vw; transform: translate(16%, -40vw); color:white;">
-            A Level Mathematics - (N/A)<br>
-            A Level Further Mathematics - (N/A)<br>
-            A Level Computer Science - (N/A)<br><br>
-            Cambridge Technicals<br>
-            Digital Media Diploma - (N/A)
-        </h1>
-    </div><!--GRADES END-->
-</div><!--TEXT PORTFOLIO END, PICTURE PORTFOLIO START-->
-    <div id="pictureportfolio" style="position: flex; justify-content: center; transform: translate(-148vw, 56vw) !important;">
-        <h1 id="hoe" style="width: 100vw; font-family: expletus-sans; font-size: 4vw; color:white; transform: translate(23vw, 1vw) !important;">HANDS-ON EXPERIENCE</h1>
-        <div id="hoeline" style="transform: translate(18.5vw,-1vw); display: flex; align-items: center;width: 100vw;">
-            <img style="width: 1%; padding: 1%" src="./Dot.png">
-            <img id="hoemainline" style="width: 50vw; height: .5vw;" src="./Line.png">
-        </div>
-        <div>
-            <div style="z-index: 6; position: fixed; transform: translate(65vw,-1vh) !important;">
-                <button class="buttons" style="height: 10vw; z-index: 5; position: absolute; width: 8vw; transform: translate(18vw, 27vh);" id="right"><img style="transform: translate(-3vw, -9vh); width:6vw; z-index: 5; position: absolute;" src="./ArrowShowcase.png"></button>
-                <img style="position: relative; z-index: 3; height: 75%; width:31vw;" src="./ShowcaseEndFlip.png">
-            </div>
-            <div style="z-index: 6; position: fixed; transform: translate(-9vh, -1vh) !important;">
-                <button class="buttons" style="height: 10vw; width: 8vw; z-index: 5; position: absolute; transform: translate(8vw, 27vh);" id="left"><img style="transform: translate(-3vw, -9vh); width:6vw; z-index: 5; position: absolute;" src="./ArrowFlip.png"></button>
-                <img style="position: relative; z-index: 3; height: 75%; width:33vw;" src="./ShowcaseEnd.png">         
-    </div>
-    <div id="mover">
-    <div style="display: flex; justify-content: left; transform: translateX(-28.50714258714%); z-index: 2;" class="carousel-track"> 
-                            <button id="item0" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="amnesic()"><img style="width:100%;  z-index: 2; position: relative;" src="./ACShowcase.png"></button>
-                            <button id="item1" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit3()"><img style="width:100%;  z-index: 2; position: relative;" src="./U3Showcase.png"></button>
-                            <button id="item2" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit4()"><img style="width:100%;  z-index: 2; position: relative;" src="./U4Showcase.png"></button>
-                            <button id="item3" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit10()"><img style="width:100%;  z-index: 2; position: relative;" src="./U10Showcase.png"></button>
-                            <button id="item4" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit11()"><img style="width:100%;  z-index: 2; position: relative;" src="./U11Showcase.png"></button>
-                            <button id="item5" class="carousel-item buttons" style="width: 20vw; height: 68vh;" onclick="test()"><img style="width:100%; z-index: 2; position: relative;" src="./U12Showcase.png"></button>
-                            <button id="item6" class="carousel-item buttons" style="transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit21()"><img style="width:100%;  z-index: 2; position: relative;" src="./U21Showcase.png"></button>
-                            <button id="item7" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="amnesic()"><img style="width:100%;  z-index: 2; position: relative;" src="./ACShowcase.png"></button>
-                            <button id="item8" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit3()"><img style="width:100%;  z-index: 2; position: relative;" src="./U3Showcase.png"></button>
-                            <button id="item9" class="carousel-item buttons" style="visibility: hidden; transform: translateY(8vh); width: 15vw; height: 50vh;" onclick="unit4()"><img style="width:100%;  z-index: 2; position: relative;" src="./U4Showcase.png"></button>
-            </div></div></div>
-            
-        </div>
-        <div id="coursediv" style="position: absolute; transform: translate(-44vw, 1010%); ">
-            <h1 id="coursework" style="width: 100vw; font-family: expletus-sans; font-size: 3vw; color:white;">-COURSEWORK</h1>
-            <h1 id="coursedesc" style="width: 100vw; font-family: expletus-sans; font-size: 2.5vw; color:white;">I have undertaken the Cambridge Technicals Digital Media Diploma.<br><a href="./coursework.html">Click here</a> for my projects I have done within my coursework.</h1>
-        </div></div><!--FULL PORTFOLIO, PICTURE PORTFOLIO END-->
-    </div>
-    </div><!--PAGE END-->
     </body>
     <style>
-        .carousel-container {
-        position: relative;
-        width: 70%;
-        margin: 50px auto;
-        overflow: hidden;
-    }
-    .carousel-item {
-        transition: transform 1s, width 1s, height 1s;
-        margin: 20px;
-    }
-    .carousel {
-        overflow: hidden;
-        width: 100vw;
-    }
-    .carousel-track {
-        transition: transform 0.5s ease;
-    }
-    .trans {
-        transition: none !important;
-    }
-    .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #333;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 24px;
-        z-index: 1;
-    }
-    .carousel-btn:focus {
-        outline: none;
-    }
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            margin-bottom: 5vw;
+        }
+        section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2vw;
+        }
+        @media screen and (max-width: 768px) {
+            .sectiontext {
+                font-size: 20vw;    
+            }
+            img, video {
+                width: 90vw;
+                height: auto;
+                margin-top: 4vw;
+            }
+            section div {
+                flex-direction: column;
+                align-items: center;
+            }
+            img[src*="Line.png"] {
+                width: 90vw;
+            }
+        }
+
+        /* Additional Media Queries for Very Small Screens */
+        @media screen and (max-width: 480px) {
+            section {
+                margin-bottom: 8vw;
+            }
+        }
     </style>
 </html>
