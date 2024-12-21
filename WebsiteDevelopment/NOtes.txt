@@ -1,0 +1,123 @@
+FULL WEBSITE SHOWCASE
+
+Client Brief for Star Wars Themed Interactive Media Product 
+
+ 
+
+Overview 
+
+The objective is to develop an interactive website that serves as a promotional platform for a new game set in the Star Wars universe. This website must not only engage users but also provide them with an immersive experience that reflects the rich narrative and dynamic aspects of Star Wars. 
+
+ 
+
+Project Details 
+
+The project entails crafting an interactive website encapsulating the Star Wars universe's essence. The aim is to highlight the game’s features, its storyline, characters, and gameplay mechanics, ultimately driving pre-order sales and engaging a broad audience. The target audience encompasses Star Wars fans of all ages, gamers who prefer adventure, strategy, and role-playing games, and potential customers in search of a new gaming experience. 
+
+ 
+
+For content, the website will feature a home page with a compelling visual design that represents the Star Wars theme, an about page that provides the backstory of the game and its connection to the Star Wars universe, and a features page that showcases the game’s unique aspects. Multimedia elements like trailers, gameplay videos, and galleries will be integrated, alongside a pre-order page detailing pricing, special editions, and bonus content, and a contact page for customer support and enquiries. 
+
+ 
+
+In terms of design and functionality, the website should be user-friendly with intuitive navigation, incorporating Star Wars thematic elements like space, stars, planets, iconic characters, and spacecraft. The design will also include sound effects and background music that resonate with the Star Wars atmosphere, ensuring the website is responsive across various devices and optimised for search engines. 
+
+ 
+
+Assessment and Submission 
+
+The project will be evaluated based on creativity, originality, effective use of multimedia and interactive elements, the quality of content, user experience, and technical proficiency. The final submission will include the live website hosted on a server, documentation of the design process, user journey, technical implementations, and an analytical report on the website's anticipated impact on the target audience and sales potential. 
+
+ 
+
+Project Timeline 
+
+The completion period for this project is 10 weeks. This period includes the initial planning and conceptualisation, design and development phases, a mid-project review, further development, and enhancement, testing and finalisation. 
+
+--- 
+
+The Outline Ideas: 
+
+The Purpose: 
+
+    Create a website to promote our product. This product is within the Star Wars genre. We are making an impression to attract those interested in Sci-Fi. The website will be programmed and interactive to engage the people on the website, and to increase conversions. 
+
+    To bring an experience to our customers, the lore will be explained and how the game is presented. We will make an attractive trailer with high quality images depicting gameplay. We are going to target all ages and gamers. We want to make it adventurous, strategical, and the ability to role-play. We want to create a community. We want to leverage our conversions by having extensions to our main product. 
+
+    Most importantly, to be able to sell our game to anybody through our website. 
+
+Target Audience: 
+
+    Everybody who preferably enjoys the Star Wars genre. 
+
+    PC & Console users. 
+
+    People who enjoy single player experiences. 
+
+    Community-driven users (users who are willing to make a community in a specific game). 
+
+Client Needs: 
+
+    A functioning website with Web 3.0 integration. 
+
+    Clear and comprehensive storytelling in the website. 
+
+    A portal to showcase the project. 
+
+    An audio-visual product that is engaging. 
+
+    An exciting product where attraction is possible. 
+
+ 
+
+User Needs: 
+
+    A playable game for all levels of hardware 
+
+    Exciting visuals. 
+
+    Cohesive backstories. 
+
+    Comprehendible key-lock concepts (where to go and how to access). 
+
+    A promising game from a trustworthy company. 
+
+    Inclusivity within the experience. This can be done through both multiplayer and singleplayer. 
+
+Delivery Format: 
+
+    Downloadable game. 
+
+    A website with a theme of Sci-Fi. 
+
+    A standard font that reflects Sci-Fi. 
+
+    Advertising that briefly showcases the gameplay with highlighted effects. 
+
+    Striking images of the gameplay. 
+
+    A trailer that generates a lot of attention. 
+
+    Social media advertising. 
+
+Platforms: 
+
+> PC (Computers) 
+
+> Consoles (XBox & PlayStation) 
+
+Legal & Ethical Issues with the project: 
+
+=> PEGI Rating – Games need to be rated by the PEGI standard. This helps ensure consumer knowledge of what is in the game. 
+
+=> Intellectual Property Rights – Making a Sci-Fi genre game similar to Star Wars can have IP (intellectual property) issues. We could be copying their style or characters by accident. We need to make sure that the game is distinguishable as an inspiration or of something similar. 
+
+=> Violence, Blood, Sensitivity – We need to consider the possibility of violence being represented towards real life. As there may be guns and blood involved, we need to consider how we can make settings for such or how we can mitigate the spread of violence in the real world. 
+
+=> Privacy – If we do utilise online services, we need to be transparent of how we collect and process data. 
+
+=> Microtransactions – As we aim to make the game customisable, we may allow asset creators to be able to push out their models in the game for a certain price. Microtransactions may encourage people to spend too much money or get scammed. We need regulations when it comes to asset distribution. 
+
+=> User Generated Content (UGC) - As we will allow User Generated Content to our game, we must account for people potentially infringing copyright or publishing grotesque assets through our services. To combat this, a ruleset will be introduced to combat this. 
+
+EXPLAIN WORK LIKE OPTIMISATION
