@@ -10,9 +10,9 @@
 <body class="gray" style="height: 300vh">
     <div id="main" style="position: absolute; transform: translate(-1.5vw, 3vh); width: 99vw; margin: 2vw;">
         <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(0vw); font-size: 3vw; text-align: center;">PITCHING A PRODUCT</h1>
-        <div style="display: flex; align-items: center; transform: translate(29.5vw, -2vw); width: 40vw;">
+        <div id="mainline" style="display: flex; align-items: center; transform: translate(29.5vw, -4vw); width: 40vw;">
             <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
-            <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
+            <img id="mainstripe" style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
         </div>
         <h1 id="about" style="font-family: expletus-sans; color: white; transform: translatey(-50%); font-size: 1.9vw; text-align: center;">
             This page provides a step-by-step journey of how I developed the idea, refined it, and created a successful pitch for my product.
@@ -176,6 +176,14 @@ This brief outlines the development of a pitch to showcase the device's design, 
         #mainhead {
             font-size: 4vw !important;
         }
+        #mainline {
+            width: 50vw !important;
+            transform: translate(23vw, -4vw) !important;
+        }
+        #mainstripe {
+            width: 50vw !important;
+            height: .5vw !important;
+        }
     }
     
     /* Additional Media Queries for Very Small Screens */
@@ -188,7 +196,7 @@ This brief outlines the development of a pitch to showcase the device's design, 
         }
         #mainline {
             width: 70vw !important;
-            transform: translate(22vw, -6vw) !important;
+            transform: translate(13vw, -6vw) !important;
         }
         #about {
             font-size: 4vw !important;
@@ -200,8 +208,8 @@ This brief outlines the development of a pitch to showcase the device's design, 
             width: 2vw !important;
         }
         #mainstripe {
-            width: 50vw !important;
-            height: 1vw !important;
+            width: 67vw !important;
+            height: .5vw !important;
         }
     }
     </style>
