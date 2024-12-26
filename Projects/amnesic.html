@@ -2,60 +2,22 @@
 <html lang="en">
     <head>
         <title>{ Roman Osborne - AnmnesicChat }</title>
-        <script src="./../JS/jquery-3.7.1.min.js"></script>
-        <script src="./../JS/indexscript.js"></script>
-        <link rel="stylesheet" href="./../style.css">
+        <script src="/JS/jquery-3.7.1.min.js"></script>
+        <script src="/JS/indexscript.js"></script>
+        <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
     <body class="gray" style="height: 300vh">
         <div id="main" style="position: absolute; transform: translateX(-1.5vw); width: 99vw; margin: 2vw;">
             <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(0vw); font-size: 5vw; text-align: center;">AmnesicChat</h1>
             <div style="display: flex; align-items: center; transform: translate(29.5vw, -6vw); width: 40vw;">
-                <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
-                <img style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
+                <img style="width: 1vw; padding: 1vw" src="/Common/Dot.png">
+                <img style="width: 33vw; height: .5vw;" src="/Common/Line.png">
             </div>
             <h1 id ="about" style="font-family: expletus-sans; color: white; transform: translatey(-50%); font-size: 1.9vw; text-align: center;">
                 This project is a work in progress. For the latest updates, visit: <a href="https://github.com/the-romanov/AmnesicChat">https://github.com/the-romanov/AmnesicChat</a>
             </h1>
-            <img style="width: 50vw; transform: translateX(25vw); height: .5vw;" src="./../Common/Line.png">
+            <img style="width: 50vw; transform: translateX(25vw); height: .5vw;" src="/Common/Line.png">
         </div>
     </body>
-    <style>
-        body {
-            overflow-x: hidden;
-        }
-        section {
-            margin-bottom: 5vw;
-        }
-        section div {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 2vw;
-        }
-        @media screen and (max-width: 768px) {
-            .sectiontext {
-                font-size: 20vw;    
-            }
-            img, video {
-                width: 90vw;
-                height: auto;
-                margin-top: 4vw;
-            }
-            section div {
-                flex-direction: column;
-                align-items: center;
-            }
-            img[src*="Line.png"] {
-                width: 90vw;
-            }
-        }
-
-        /* Additional Media Queries for Very Small Screens */
-        @media screen and (max-width: 480px) {
-            section {
-                margin-bottom: 8vw;
-            }
-        }
-    </style>
 </html>

@@ -2,147 +2,138 @@
 <html lang="en">
     <head>
         <title>{ Roman Osborne - 3D Modeling }</title>
-        <script src="./../JS/jquery-3.7.1.min.js"></script>
-        <script src="./../JS/indexscript.js"></script>
-        <link rel="stylesheet" href="./../style.css">
+        <script src="/JS/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
-    <body class="gray" style="height: 300vh">
-        <div id="main" style="position: absolute; transform: translate(-1.5vw, 3vh); width: 99vw; margin: 2vw;">
-            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(19vw); font-size: 3vw; text-align: center; width: 60vw;">3D MODELING</h1>
-            <div id="mainline" style="display: flex; align-items: center; transform: translate(34.5vw, -4vw); width: 40vw;">
-                <img style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
-                <img id="mainstripe" style="width: 23vw; height: .5vw;" src="./../Common/Line.png">
+    <body class="gray">
+        <div id="main">
+            <h1 id="mainhead">3D MODELLING</h1>
+            <div id="mainline" style="transform: translate(34.5vw, -4vw);">
+                <img id="maindot" src="/Common/Dot.png">
+                <img id="mainstripe" style="width: 23vw; height: .5vw;" src="/Common/Line.png">
             </div>
-            <h1 id ="about" style="font-family: expletus-sans; color: white; transform: translatey(-50%); font-size: 1.9vw; text-align: center;">
+            <h1 id ="about">
                 This page showcases my experience in 3D modeling, detailing the steps I follow to create stunning 3D assets from concept to completion.
             </h1>
-            <img style="width: 50vw; transform: translateX(25vw); height: .5vw;" src="./../Common/Line.png">
-            <!-- Introduction -->
-            <div style="transform: translateY(2vw);">
-                <!-- Idea Thoughts -->
+            <img class="divisor" src="/Common/Line.png">
+            <div id="divrise">
                 <section>
-                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4vw; text-align: center;">Introduction</h2>
-                    <div style="display: flex; justify-content: space-between; align-items: center; text-align: justify; margin: 2vw;">
-                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; flex: 1;">
+                    <h2 class="sectionheader vw4">Introduction</h2>
+                    <div class="sectiondiv">
+                        <p class="sectiontext">
                             My journey in 3D modeling began with a fascination for digital art and design. I was captivated by the ability to create my very own models using 3D software.<br><br> 
                             Over the years, I honed my skills in tools like Autodesk 3DS Max, Sketchfab, and Unreal Engine 5 to create everything from detailed models to fully animated scenes.<br><br>
                             3D modeling is both an art and a science. It requires creativity, technical skill, and a deep understanding of geometry and texturing techniques to bring an object to life in the digital world.
                         </p>
-                        <img class="sectionimage" style="width: 40vw; height: auto; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE15.png">
+                        <img class="sectionimage vw4" src="/3DModelling/UE15.png">
                     </div>
                 </section>
-                <img class="sectionimage" style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
-                <!-- Step 1: Conceptualization -->
+                <img class="divisor" src="/Common/Line.png">
                 <section>
-                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 1: Conceptualisation</h2>
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 2vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Moodboard.png">
-                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; flex: 1; margin: 2vw;">
+                    <h2 class="sectionheader vw4n5">Step 1: Conceptualisation</h2>
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/Moodboard.png">
+                        <p class="sectiontext">
                             The first step in 3D modeling is conceptualisation. This phase involves gathering reference images, sketches, and inspirations to understand the form and details of the object you want to create.<br><br> 
                             Before we start making said product, we need to be informed of the client brief which will be our stepping stones.<br><br>
                         </p>
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/CB.png">
+                        <img class="sectionimage vw30" src="/3DModelling/CB.png">
                     </div>
                 </section>
                 <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/SceneConcept.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/SceneMoodboard.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/MoodboardWorld.png">
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/SceneConcept.png">
+                        <img class="sectionimage vw30" src="/3DModelling/SceneMoodboard.png">
+                        <img class="sectionimage vw30" src="/3DModelling/MoodboardWorld.png">
                     </div>
                 </section>
-                <img style="width: 50vw; transform: translate(25vw, -2vw); height: .5vw;" src="./../Common/Line.png">
-                <!-- Step 2: Modeling -->
+                <img class="divisor" src="/Common/Line.png">
                 <section>
-                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 2: Character Modelling</h2>
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin: 2vw;">
-                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; flex: 1; margin: 2vw;">
+                    <h2 class="sectionheader vw4n5">Step 2: Character Modelling</h2>
+                    <div class="sectiondiv">
+                        <p class="sectiontext">
                             The modeling phase is where the object takes shape. I begin by creating a base mesh using modelling techniques. The goal here is to define the overall form of the object or character.<br><br> 
                             Once the base model is established, I refine the shape by adding more detail and subdividing the mesh to make it smoother.<br><br> 
                             Depending on the complexity, I use certain tools like Extrude, Inset & Chamfer for finer details. This allows me to create highly detailed and organic models with a high level of realism.<br><br>
                             Below you will see the sketches of how I thought about making my final model.
                         </p>
                         <div style="flex: 1; display: flex; flex-direction: column; gap: 2vw;">
-                            <!-- Images stacked vertically -->
-                            <img class="sectionimage" style="width: 40vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid1.png">
+                            <img class="sectionimage vw4" src="/3DModelling/Droid1.png">
                         </div>
                     </div>
                     <section>
-                        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/SketchBox1.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/SketchConcept1.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/SketchShip1.png">
+                        <div class="sectiondiv">
+                            <img class="sectionimage vw30" src="/3DModelling/SketchBox1.png">
+                            <img class="sectionimage vw30" src="/3DModelling/SketchConcept1.png">
+                            <img class="sectionimage vw30" src="/3DModelling/SketchShip1.png">
                         </div>
                     </section>
                     <section>
-                        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid2.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid3.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid4.png">
+                        <div class="sectiondiv">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid2.png">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid3.png">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid4.png">
                         </div>
                     </section>
                     <section>
-                        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid5.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid6.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid7.png">
+                        <div class="sectiondiv">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid5.png">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid6.png">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid7.png">
                         </div>
                     </section>
                     <section>
-                        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid8.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid9.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid10.png">
+                        <div class="sectiondiv">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid8.png">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid9.png">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid10.png">
                         </div>
                     </section>
                     <section>
-                        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid11.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid12.png">
-                            <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Droid13.png">
+                        <div class="sectiondiv">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid11.png">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid12.png">
+                            <img class="sectionimage vw30" src="/3DModelling/Droid13.png">
                         </div>
                     </section>
                 </section>
-                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="/3DModelling/Scene1.png">
-
-                <!-- Step 3: Texturing -->
+                <img class="divisor" src="/Common/Line.png">
                 <section>
-                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 3: Scene Modelling</h2>
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 2vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene1.png">
-                        <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw; flex: 1;">
+                    <h2 class="sectionheader vw4n5">Step 3: Scene Modelling</h2>
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene1.png">
+                        <p class="sectiontext">
                             After the model is created, the next step is scene creation. This is where I add a small environment to make the scene a little bit more lively.<br><br> 
                             I use the same techniques to craft the 3D model. We are taking a remix rather than a spontaneous amalgamation.<br><br> 
                         </p>
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene2.png">
-                    </div>
-                </section>
-                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="/Common/Line.png">
-                <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene3.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene4.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene5.png">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene2.png">
                     </div>
                 </section>
                 <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene6.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene7.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene8.png">
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene3.png">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene4.png">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene5.png">
                     </div>
                 </section>
                 <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene9.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene10.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/Scene11.png">
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene6.png">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene7.png">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene8.png">
                     </div>
                 </section>
-                <!-- Step 4: Rendering -->
                 <section>
-                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 4: Map Modelling</h2>
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene9.png">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene10.png">
+                        <img class="sectionimage vw30" src="/3DModelling/Scene11.png">
+                    </div>
+                </section>
+                <img class="divisor" src="/Common/Line.png">
+                <section>
+                    <h2 class="sectionheader vw4n5">Step 4: Map Modelling</h2>
                     <div style="display: flex; justify-content: space-between; align-items: center; margin: 2vw;">
                         <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/WorldConcept.png">
                         <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw; flex: 1;">
@@ -152,49 +143,48 @@
                     </div>
                 </section>
                 <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE2.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE3.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE4.png">
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/UE2.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE3.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE4.png">
                     </div>
                 </section>
                 <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE5.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE6.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE7.png">
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/UE5.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE6.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE7.png">
                     </div>
                 </section>
                 <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE8.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE9.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE10.png">
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/UE8.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE9.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE10.png">
                     </div>
                 </section>
                 <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE11.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE12.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE13.png">
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/UE11.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE12.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE13.png">
                     </div>
                 </section>
                 <section>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 1vw;">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE14.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE15.png">
-                        <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="/3DModelling/UE16.png">
+                    <div class="sectiondiv">
+                        <img class="sectionimage vw30" src="/3DModelling/UE14.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE15.png">
+                        <img class="sectionimage vw30" src="/3DModelling/UE16.png">
                     </div>
                 </section>
-                <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
-                <!-- Conclusion -->
-                <section style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: 2vw">
-                    <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Conclusion</h2>
-                    <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw;">
+                <img class="divisor" src="/Common/Line.png">
+                <section class="sectiondiv" style="flex-direction: column;"">
+                    <h2 class="sectionheader vw4n5">Conclusion</h2>
+                    <p class="sectiontext">
                         3D modeling is an intricate process that combines artistic creativity with technical knowledge. It requires patience, attention to detail, and a passion for creating stunning visuals.<br><br>
                         From conceptualisation to the final render, I strive to create realistic, detailed, and engaging 3D models that bring ideas to life in the digital world.
                     </p>
-                    <video class="sectionimage" style="width: 80vw; border-radius: 15px; border: 3px solid white;" controls>
+                    <video class="sectionimage" style="width: 80vw; margin: 2vw;" controls>
                         <source src="/3DModelling/ILMPROJ.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -203,70 +193,21 @@
         </div>
     </body>
     <style>
-        body {
-            overflow-x: hidden;
-        }
-        section {
-            margin-bottom: 5vw;
-        }
-        section div {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 2vw;
-        }
         @media screen and (max-width: 768px) {
-        
-            .sectiontext {
-                font-size: 3vw !important;    
-            }
-            .sectionheader {
-                font-size: 6vw !important;    
-            }
-            .sectionimage {
-                width: 90vw !important;
-            }
-            #trio {
-                transform: translateX(1vw) !important;
-            }
-            #about {
-                font-size: 3vw !important;
-                width: 80vw !important;
-                transform: translateX(10vw) !important;
-            }
-            #mainhead {
-                font-size: 4vw !important;
-            }
             #mainline {
-                width: 40vw !important;
-                transform: translate(32vw, -4vw) !important;
+                width: 36vw !important;
+                transform: translate(30vw, -4vw) !important;
             }
             #mainstripe {
-                width: 28.5vw !important;
+                width: 32.5vw !important;
                 height: .5vw !important;
             }
-        }
-        
+        }  
         /* Additional Media Queries for Very Small Screens */
         @media screen and (max-width: 480px) {
-            .sectiontext {
-                font-size: 4vw !important;    
-            }
-            .sectionheader {
-                font-size: 12vw !important;    
-            }
             #mainline {
                 width: 60vw !important;
-                transform: translate(22vw, -6vw) !important;
-            }
-            #about {
-                font-size: 4vw !important;
-            }
-            #mainhead {
-                font-size: 6vw !important;
-            }
-            #maindot {
-                width: 2vw !important;
+                transform: translate(20vw, -6vw) !important;
             }
             #mainstripe {
                 width: 50vw !important;

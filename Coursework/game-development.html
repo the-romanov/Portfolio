@@ -2,44 +2,40 @@
 <html lang="en">
     <head>
     <title>{ Roman Osborne - Game Development }</title>
-    <script src="./../JS/jquery-3.7.1.min.js"></script>
-    <script src="./../JS/indexscript.js"></script>
-    <link rel="stylesheet" href="./../style.css">
+    <script src="/JS/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
     <body class="gray" style="height: 300vh">
-        <div id="main" style="position: absolute; transform: translate(-1.5vw, 3vh); width: 99vw; margin: 2vw;">
-            <h1 id="mainhead" style="font-family: expletus-sans; color: white; transform: translateX(29vw); font-size: 3vw; text-align: center; width: 40vw;">GAME DEVELOPMENT</h1>
-            <div id="mainline" style="display: flex; align-items: center; transform: translate(29.5vw, -4vw); width: 40vw;">
-                <img id="maindot" style="width: 1vw; padding: 1vw" src="./../Common/Dot.png">
-                <img id="mainstripe" style="width: 33vw; height: .5vw;" src="./../Common/Line.png">
+        <div id="main">
+            <h1 id="mainhead">GAME DEVELOPMENT</h1>
+            <div id="mainline" style="transform: translate(29.5vw, -4vw);">
+                <img id="maindot" src="/Common/Dot.png">
+                <img id="mainstripe" style="width: 33vw; height: .5vw;" src="/Common/Line.png">
             </div>
-            <h1 id ="about" style="font-family: expletus-sans; color: white; transform: translateX(5vw); font-size: 1.6vw; text-align: center; width: 90vw;">
+            <h1 id ="about">
                 This page will include my experience in developing games and a detailed overview of my path to game creation.
             </h1>
-            <img style="width: 50vw; transform: translateX(25vw); height: .5vw;" src="./../Common/Line.png">
-            <!-- Introduction -->
-            <div style="transform: translateY(2vw);">
-            <!-- Idea Thoughts -->
+            <img class="divisor" src="/Common/Line.png">
+            <div id="divrise">
             <section>
-                <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4vw; text-align: center;">Introduction</h2>
-                <div style="display: flex; justify-content: space-between; align-items: center; text-align: justify; margin: 2vw;">
-                    <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; flex: 1;">
+                <h2 class="sectionheader vw4">Introduction</h2>
+                <div class="sectiondiv">
+                    <p class="sectiontext">
                         My journey into game development began with a passion for gaming.<br><br>I was not only fascinated by interactive experiences, I always wanted to create interactive experiences. 
                         As a child, I was captivated by games and fascinated how they made it.<br><br>This fascination grew as I started learning programming languages and experimenting with game engines. 
                         Over the years, I have developed a strong foundation in game design, coding, asset creation, and interactive gameplay, which have become the core pillars of my development process 
                         and the ways to bring a game to life.
                     </p>
-                    <img class="sectionimage" style="width: 40vw; height: auto; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/FullUI.png">
+                    <img class="sectionimage" style="width: 40vw;" src="/GameDevelopment/FullUI.png">
                 </div>
             </section>
-            <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
-            <!-- Step 1: Prototyping & Core Mechanics -->
+            <img class="divisor" src="/Common/Line.png">
             <section>
-                <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 1: Prototyping & Core Mechanics</h2>
-                <div style="display: flex; justify-content: space-between; align-items: center; margin: 2vw;">
-                    <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/RedPoint.png">
-                    <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; flex: 1; margin: 2vw;">
+                <h2 class="sectionheader vw4n5">Step 1: Prototyping & Core Mechanics</h2>
+                <div class="sectiondiv">
+                    <img class="sectionimage vw30" src="/GameDevelopment/RedPoint.png">
+                    <p class="sectiontext" style="margin: 2vw">
                         Once I have a concept in mind, I dive into building a concept. This stage is crucial as it focuses on testing the game's 
                         core mechanics without worrying about the final art or design. I use rapid iteration to test different gameplay 
                         elements such as movement, combat, or mechanics. The goal is to create a simple, functional version 
@@ -49,15 +45,14 @@
                         the player’s experience is intuitive and engaging. Whether it’s combat, exploration, or interaction with other players, the 
                         core mechanics need to work smoothly before adding additional layers to the game.
                     </p>
-                    <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/Character.png">
+                    <img class="sectionimage vw30" src="/GameDevelopment/Character.png">
                 </div>
             </section>
-            <img style="width: 50vw; transform: translate(25vw, -2vw); height: .5vw;" src="./../Common/Line.png">
-            <!-- Step 2: Asset Creation & Integration -->
+            <img class="divisor" src="/Common/Line.png">
             <section>
-                <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Step 2: Asset Creation & Integration</h2>
+                <h2 class="sectionheader vw4n5">Step 2: Asset Creation & Integration</h2>
                 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin: 2vw;">
-                    <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; flex: 1; margin: 2vw;">
+                    <p class="sectiontext">
                         Once the core mechanics are established and functional, the next crucial phase in game development is asset creation and integration. 
     This is where the game truly begins to take shape, as assets and code help bring the world to life. The code you see in this section shows how multiple clients will react to a player damage system. As we build a multiplayer game, we must replicate properties.
     <br><br>
@@ -66,22 +61,19 @@
     At this stage, the game’s environment starts to feel fully realised, as players can interact with the visual and audio elements in a fluid and intuitive way. Whether it’s firing a gun, exploring a new environment, or hearing ambient sounds that react to player actions, asset integration forms the backbone of a believable and immersive experience.
                     </p>
                     <div style="flex: 1; display: flex; flex-direction: column; gap: 2vw;">
-                        <!-- Images stacked vertically -->
-                        <img class="sectionimage" style="width: 40vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/ServerDamage.png">
-                        <img class="sectionimage" style="width: 40vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/GunMuzzle.png">
+                        <img class="sectionimage" style="width: 40vw;" src="./../GameDevelopment/ServerDamage.png">
+                        <img class="sectionimage" style="width: 40vw;" src="./../GameDevelopment/GunMuzzle.png">
                     </div>
                 </div>
             </section>
-            <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
-
-            <!-- Step 3: UI/UX Design & Polishing -->
-            <section style="display: flex; flex-direction: column; align-items: center; margin: 2vw;">
-                <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">
+            <img class="divisor" src="/Common/Line.png">
+            <section class="sectiondiv" style="flex-direction: column;">
+                <h2 class="sectionheader vw4n5">
                     Step 3: UI/UX Design & Polishing
                 </h2>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: 2vw;">
-                    <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/UI.png">
-                    <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw; flex: 1;">
+                    <img class="sectionimage vw30" src="/GameDevelopment/UI.png">
+                    <p class="sectiontext" style="text-align: justify; margin: 2vw;">
                         A well-designed UI is essential for ensuring that players can easily interact with the game. I focus on creating intuitive 
                         menus, HUDs, and interactive elements that are easy to navigate. The goal is to make the UI feel like a natural part of 
                         the game world, not a distracting overlay.
@@ -90,16 +82,15 @@
                         attention to input responsiveness, intuitive controls, and seamless transitions between game states (e.g., menus, gameplay, etc.).
                         This phase also involves bug fixing and refining mechanics to ensure the game is polished and enjoyable.
                     </p>
-                    <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/UIShoot.png">
+                    <img class="sectionimage vw30" src="/GameDevelopment/UIShoot.png">
                 </div>
             </section>
-            <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
-            <!-- Step 4: Testing & Feedback -->
-            <section style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: 2vw">
-                <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">
+            <img class="divisor" src="/Common/Line.png">
+            <section class="sectiondiv" style="flex-direction: column; ">
+                <h2 class="sectionheader vw4n5">
                     Step 4: Testing & Feedback
                 </h2>
-                <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw; width: 80%; max-width: 1200px;">
+                <p class="sectiontext" style="width: 83vw; margin: 2vw;">
                     Once the game reaches a stable state, I conduct extensive playtests to gather feedback. I invite others to play the game, 
                     observe their reactions, and analyze how they interact with the game world. This phase often reveals issues with difficulty, 
                     level design, or even minor bugs that need fixing.
@@ -108,29 +99,27 @@
                     I adjust the difficulty curve, fine-tune player interactions, and ensure that the game provides the right balance of challenge 
                     and fun.
                 </p>
-                
-                <div id="trio" style="display: flex; justify-content: space-between; width: 97vw; transform: translateX(-1vw);">
-                    <img class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" src="./../GameDevelopment/FullUI.png">
-                    <video class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" controls>
-                        <source src="./../GameDevelopment/UIExample.mp4" type="video/mp4">
+                <div style="display: flex; justify-content: space-between; width: 97vw;;">
+                    <img class="sectionimage vw30" src="/GameDevelopment/FullUI.png">
+                    <video class="sectionimage vw30" controls>
+                        <source src="/GameDevelopment/UIExample.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <video class="sectionimage" style="width: 30vw; border-radius: 15px; border: 3px solid white;" controls>
+                    <video class="sectionimage vw30" controls>
                         <source src="/GameDevelopment/UIFunction.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </section>
-            <img style="width: 50vw; transform: translate(25vw, -1vw); height: .5vw;" src="./../Common/Line.png">
-            <!-- Ending -->
-            <section style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: 2vw">
-                <h2 class="sectionheader" style="font-family: expletus-sans; color: white; font-size: 4.5vw; text-align: center;">Conclusion</h2>
-                <p class="sectiontext" style="font-family: Arial, sans-serif; color: white; font-size: 1.5vw; text-align: justify; margin: 2vw;">
+            <img class="divisor" src="/Common/Line.png">
+            <section class="sectiondiv" style="flex-direction: column;">
+                <h2 class="sectionheader vw4n5">Conclusion</h2>
+                <p class="sectiontext" style="margin: 2vw;">
                     Game development is an incredibly rewarding journey that requires patience, creativity, and technical expertise. 
                     Throughout the process, I’ve learned the importance of planning, iterating, and embracing feedback. My skills have 
                     grown with each project, and I’m excited to continue pushing the boundaries of interactive entertainment.
                 </p>
-                <video class="sectionimage" style="width: 90vw; border-radius: 15px; border: 3px solid white;" controls>
+                <video class="sectionimage" style="width: 90vw;" controls>
                     <source src="/GameDevelopment/FullGameShow.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -139,65 +128,24 @@
     </div>
     </body>
 <style>
-body {
-    overflow-x: hidden;
-}
-section {
-    margin-bottom: 5vw;
-}
-section div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2vw;
-}
-@media screen and (max-width: 768px) {
-
-    .sectiontext {
-        font-size: 3vw !important;    
-    }
-    .sectionheader {
-        font-size: 6vw !important;    
-    }
-    .sectionimage {
-        width: 90vw !important;
-    }
-    #trio {
-        transform: translateX(1vw) !important;
-    }
-    #about {
-        font-size: 3vw !important;
-        width: 80vw !important;
-        transform: translateX(10vw) !important;
-    }
-    #mainhead {
-        font-size: 4vw !important;
-    }
-}
-
 /* Additional Media Queries for Very Small Screens */
-@media screen and (max-width: 480px) {
-    .sectiontext {
-        font-size: 4vw !important;    
-    }
-    .sectionheader {
-        font-size: 12vw !important;    
-    }
+@media screen and (max-width: 768px) {
     #mainline {
-        width: 60vw !important;
-        transform: translate(22vw, -6vw) !important;
-    }
-    #about {
-        font-size: 4vw !important;
-    }
-    #mainhead {
-        font-size: 6vw !important;
-    }
-    #maindot {
-        width: 2vw !important;
+        width: 50vw !important;
+        transform: translate(23vw, -4vw) !important;
     }
     #mainstripe {
         width: 50vw !important;
+        height: .5vw !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    #mainline {
+        width: 75vw !important;
+        transform: translate(12vw, -6vw) !important;
+    }
+    #mainstripe {
+        width: 68vw !important;
         height: 1vw !important;
     }
 }
