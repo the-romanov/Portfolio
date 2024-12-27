@@ -1,18 +1,18 @@
 function websitedevelopment() {
-    location.assign("Portfolio/Coursework/website-development.html");
+    location.assign("https://the-romanov.github.io/Portfolio/Coursework/website-development.html");
 }
 function animation() {
-    location.assign("Portfolio/Coursework/animation.html");
+    location.assign("https://the-romanov.github.io/Portfolio/Coursework/animation.html");
 }
 function modelling() {
-    location.assign("Portfolio/Coursework/3d-modelling.html");
+    location.assign("https://the-romanov.github.io/Portfolio/Coursework/3d-modelling.html");
 }
 function gamedevelopment() {
-    location.assign("Portfolio/Coursework/game-development");
+    location.assign("https://the-romanov.github.io/Portfolio/Coursework/game-development.html");
 }
 function pitchingaproduct() {
-    location.assign("Portfolio/Coursework/pitching-a-product.html");
+    location.assign("https://the-romanov.github.io/Portfolio/Coursework/pitching-a-product.html");
 }
 function amnesic() {
-    location.assign("Portfolio/Projects/amnesic.html");
+    location.assign("https://the-romanov.github.io/Portfolio/Projects/amnesic.html");
 }
