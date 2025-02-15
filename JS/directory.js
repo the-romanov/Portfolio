@@ -16,3 +16,6 @@ function pitchingaproduct() {
 function amnesic() {
     location.assign("https://the-romanov.github.io/Portfolio/Projects/amnesic.html");
 }
+function poster() {
+    location.assign("https://the-romanov.github.io/Portfolio/Coursework/poster-development.html")
+}
